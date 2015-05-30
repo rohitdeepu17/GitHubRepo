@@ -1,0 +1,12 @@
+
+abstract class GrandFather{
+	GrandFather(){
+		System.out.println("Constructor of GrandFather called");
+	}
+}
+
+public class AbstractClassTest {
+	public static void main(String args[]){
+		
+	}
+}

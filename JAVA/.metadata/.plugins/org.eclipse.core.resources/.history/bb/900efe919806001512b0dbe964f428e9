@@ -1,0 +1,27 @@
+
+abstract class GrandFather{
+	GrandFather(){
+		System.out.println("Constructor of GrandFather called");
+	}
+	abstract int getAge();
+	void showClassName(){
+		System.out.println("Grand Father");
+	}
+}
+
+class Father extends GrandFather{
+	Father(){
+		System.out.println("Constructor of Father called");
+	}
+	int getAge(){
+		return 40;
+	}
+}
+
+public class AbstractClassTest {
+	public static void main(String args[]){
+		GrandFather g = new Father();
+		System.out.println("The age of Father is : " + g.getAge());
+		g.showClassName();
+	}
+}

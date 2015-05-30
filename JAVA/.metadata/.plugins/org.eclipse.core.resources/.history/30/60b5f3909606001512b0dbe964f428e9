@@ -1,0 +1,12 @@
+
+abstract class Bike(){
+	Bike(){
+		
+	}
+}
+
+public class AbstractClassTest {
+	public static void main(String args[]){
+		
+	}
+}

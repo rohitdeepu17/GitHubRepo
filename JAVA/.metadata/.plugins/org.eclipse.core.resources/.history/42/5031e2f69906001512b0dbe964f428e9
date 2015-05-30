@@ -1,0 +1,52 @@
+
+//An abstract class may have some method
+abstract class GrandFather{
+	int age;
+	GrandFather(){
+		System.out.println("Constructor of GrandFather called");
+	}
+	abstract int getAge();
+	void implementedFunction(){
+		System.out.println("A function implemented in abstract class itself");
+	}
+}
+
+class Father extends GrandFather{
+	Father(){
+		System.out.println("Constructor of Father called");
+	}
+	int getAge(){
+		return 40;
+	}
+	void setAge(int x)
+	{
+		age = x;
+	}
+}
+
+class Son extends GrandFather{
+	Son(){
+		System.out.println("Constructor of Son called");
+	}
+	int getAge(){
+		return age;
+	}
+	void setAge(int x)
+	{
+		age = x;
+	}
+}
+
+public class AbstractClassTest {
+	public static void main(String args[]){
+		GrandFather f = new Father();
+		System.out.println("The age of Father is : " + f.getAge());
+		f.implementedFunction();
+		
+		System.out.println("");
+		
+		GrandFather s = new Son();
+		System.out.println("The age of Son is : " + s.getAge());
+		s.implementedFunction();
+	}
+}
