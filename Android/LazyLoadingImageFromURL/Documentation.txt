@@ -1,0 +1,4 @@
+This application downloads images from URLs and show it on the sample android application.
+
+Reference:-
+http://androidexample.com/Download_Images_From_Web_And_Lazy_Load_In_ListView_-_Android_Example/index.php?view=article_discription&aid=112&aaid=134
