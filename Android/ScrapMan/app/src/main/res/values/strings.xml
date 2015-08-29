@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ScrapApp</string>
+
+    <!-- For MyActivity -->
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="login">Login</string>
+    <string name="username_email">Username/E-mail</string>
+    <string name="passwd">Password</string>
+    <string name="signup">New User? Sign up here</string>
+
+    <!-- For SignUpPage -->
+    <string name="title_activity_sign_up_page">SignUpPage</string>
+    <string name="name">Name :</string>
+    <string name="hint_name">Enter your name</string>
+    <string name="phone">Phone</string>
+    <string name="hint_phone">Enter your phone number</string>
+    <string name="address">Address</string>
+    <string name="hint_address">Enter your pickup address</string>
+    <string name="title_activity_home_page">HomePage</string>
+    <string name="submit">Submit</string>
+    <string name="price_list">Check Price List</string>
+    <string name="account_settings">Account Settings</string>
+    <string name="request_pickup">Request Pickup</string>
+    <string name="title_activity_price_list">PriceList</string>
+    <string name="title_activity_request_pickup">RequestPickup</string>
+    <string name="title_activity_account_settings">AccountSettings</string>
+    <string name="hint_username_email">Enter your email address</string>
+    <string name="hint_password">Enter a password</string>
+    <string name="confirm_passwd">Confirm Password</string>
+    <string name="hint_confirm_password">Enter same password for confirmation</string>
+    <string name="submit_request">Submit Request</string>
+    <string name="pickup_time_slot">Select Pickup Time-slot</string>
+    <string name="pickup_day">Select Pickup Day</string>
+    <string name="update">Update</string>
+    <string name="title_activity_change_password">Change Password</string>
+    <string name="current_passwd">Old Password :</string>
+    <string name="hint_current_password">Enter current password</string>
+    <string name="new_passwd">New Password</string>
+    <string name="hint_new_password">Enter New Password</string>
+    <string name="confirm_new_passwd">Confirm New Password</string>
+    <string name="hint_confirm_new_password">Confirm New Password</string>
+    <string name="change_password">ChangePassword</string>
+    <string name="change">Update Password</string>
+
+</resources>
