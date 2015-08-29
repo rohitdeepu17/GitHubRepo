@@ -23,19 +23,19 @@ public class MyActivity extends Activity {
     String TAG = "MyActivity";
 
     String[] categoryNames = new String[]{
-            "Jutery"/*,
+            "Paper",
             "Cardbox",
             "Iron",
             "Tin",
-            "Plastic"*/
+            "Plastic"
     };
 
     double[] prices = new double[]{
-            9.00/*,
+            9.00,
             7.00,
-            16.00,
+            18.00,
             50.00,
-            12.50,*/
+            12.50,
     };
 
     @Override
@@ -46,11 +46,11 @@ public class MyActivity extends Activity {
         mScrapDatabaseAdapter = new ScrapDatabaseAdapter(this);
 
         //For the time being, create price list on the user end
-        /*try {
+        try {
             mScrapDatabaseAdapter.createPriceList(categoryNames, prices, categoryNames.length);
         } catch (SQLException e) {
             e.printStackTrace();
-        }*/
+        }
 
         //debugging starts here
         try {

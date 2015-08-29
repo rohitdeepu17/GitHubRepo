@@ -7,24 +7,37 @@ import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import java.sql.SQLException;
+import java.util.ArrayList;
+
 
 public class PriceList extends Activity {
     ListView listViewPriceList ;
+
+    ScrapDatabaseAdapter mScrapDatabaseAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_price_list);
 
+        mScrapDatabaseAdapter = new ScrapDatabaseAdapter(this);
+
         listViewPriceList = (ListView) findViewById(R.id.list_view_price_list);
 
-        String[] values = new String[]{
-                "Paper : 9.00",
-                "Cardbox : 7.00",
-                "Iron : 16.00",
-                "Tin : 50.00",
-                "Plastic : 12.50"
-        };
+        ArrayList<PriceListPairs> mPriceListPairs = new ArrayList<PriceListPairs>();
+        try {
+            mPriceListPairs = mScrapDatabaseAdapter.getPriceList();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        long size = mPriceListPairs.size();
+        ArrayList<String> mPriceList  = new ArrayList<String>();
+        for(int i=0;i<size;i++)
+        {
+            mPriceList.add("" + mPriceListPairs.get(i).key() + "( Rs." + mPriceListPairs.get(i).value() + "/Kg)");
+        }
 
         // Define a new Adapter
         // First parameter - Context
@@ -33,7 +46,7 @@ public class PriceList extends Activity {
         // Forth - the Array of data
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_1, android.R.id.text1, values);
+                android.R.layout.simple_list_item_1, android.R.id.text1, mPriceList);
 
 
         // Assign adapter to ListView

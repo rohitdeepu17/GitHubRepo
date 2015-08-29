@@ -4,34 +4,82 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Spinner;
 import android.widget.TextView;
+
+import java.sql.SQLException;
+import java.util.ArrayList;
 
 
 public class RequestPickup extends Activity {
+    ScrapDatabaseAdapter mScrapDatabaseAdapter;
 
-    private String[] arrText =
-            new String[]{"Paper(Rs.9.00/Kg)","Cardbox(Rs.7.00/Kg)","Iron(Rs.16.00/Kg)","Tin(Rs.50.00/Kg)"
-                    ,"Plastic(Rs.12.50/Kg)"};
-    private String[] arrTemp;
+    Button buttonSubmitRequest;
+    Spinner spinnerDay, spinnerTimeSlot;
+
+    private String[] arrText;
+    private double[] arrTemp;
+    private String[] categoryNames;
+    double weights[];
+
+    private static final String TAG = "RequestPickUp";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_request_pickup);
 
-        arrTemp = new String[arrText.length];
+        mScrapDatabaseAdapter = new ScrapDatabaseAdapter(this);
+
+        buttonSubmitRequest = (Button)findViewById(R.id.button_submit_request);
+        spinnerDay = (Spinner)findViewById(R.id.spinner_day);
+        spinnerTimeSlot = (Spinner)findViewById(R.id.spinner_time_slot);
+
+        ArrayList<PriceListPairs> mPriceListPairs = new ArrayList<PriceListPairs>();
+        try {
+            mPriceListPairs = mScrapDatabaseAdapter.getPriceList();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        int size = mPriceListPairs.size();
+        arrText = new String[size];
+        categoryNames = new String[size];
+        for(int i=0;i<size;i++)
+        {
+            categoryNames[i] = mPriceListPairs.get(i).key();
+            arrText[i] = "" + categoryNames[i] + "( Rs." + mPriceListPairs.get(i).value() + "/Kg)";
+        }
+
+        arrTemp = new double[size];
 
         MyListAdapter myListAdapter = new MyListAdapter();
         ListView listView = (ListView) findViewById(R.id.list_view_request_pickup);
         listView.setAdapter(myListAdapter);
+
+        buttonSubmitRequest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    Log.d(TAG, spinnerDay.getSelectedItem().toString()+spinnerTimeSlot.getSelectedItem().toString());
+                    for(int i=0;i<categoryNames.length;i++)
+                        Log.d(TAG, "The weight at index "+i+" = "+arrTemp[i]);
+                    mScrapDatabaseAdapter.requestPickup(spinnerDay.getSelectedItem().toString(), spinnerTimeSlot.getSelectedItem().toString(), "rohitdeepu17@gmail.com", categoryNames, arrTemp, categoryNames.length);
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
     }
 
 
@@ -85,7 +133,7 @@ public class RequestPickup extends Activity {
             holder.ref = position;
 
             holder.textView1.setText(arrText[position]);
-            holder.editText1.setText(arrTemp[position]);
+            holder.editText1.setText(String.valueOf(arrTemp[position]));
             holder.editText1.addTextChangedListener(new TextWatcher() {
 
                 @Override
@@ -104,7 +152,7 @@ public class RequestPickup extends Activity {
                 @Override
                 public void afterTextChanged(Editable arg0) {
                     // TODO Auto-generated method stub
-                    arrTemp[holder.ref] = arg0.toString();
+                    arrTemp[holder.ref] = Double.parseDouble(arg0.toString());      //Bug here : in case we erase entire double value 0.0
                 }
             });
 

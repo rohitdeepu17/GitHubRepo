@@ -79,7 +79,8 @@ public class SignUpPage extends Activity {
                 }
 
                 //if all checks are done successfully, register new user
-                if(flag) {
+                //For the time, commenting this code to make PriceList work
+                /*if(flag) {
                     try {
                         mScrapDatabaseAdapter.createNewUser(username,passwd,name,phone,address);
                         Toast.makeText(SignUpPage.this, "User Registered Successfully", Toast.LENGTH_SHORT).show();
@@ -89,7 +90,10 @@ public class SignUpPage extends Activity {
                     Intent intent = new Intent(SignUpPage.this, HomePage.class);
                     intent.putExtra("username",username);
                     startActivity(intent);
-                }
+                }*/
+                Intent intent = new Intent(SignUpPage.this, HomePage.class);
+                intent.putExtra("username",username);
+                startActivity(intent);
             }
         });
     }

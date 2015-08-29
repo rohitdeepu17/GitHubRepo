@@ -9,6 +9,7 @@ import android.util.Log;
 import android.widget.Toast;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 /**
  * Created by rohitsingla on 29/08/15.
@@ -140,6 +141,34 @@ public class ScrapDatabaseAdapter {
             db.insert(scrapDatabaseHelper.TABLE_NAME_SCRAP_CATEGORY, null, contentValues);
         }
         closeDB();
+    }
+
+    ArrayList<PriceListPairs> getPriceList() throws SQLException {
+        ArrayList<PriceListPairs> mPriceListPairs = new ArrayList<PriceListPairs>();
+
+        openDBReadable();
+        //columns to be selected from TABLE_NAME_SCRAP_CATEGORY
+        String[] selectedColumns = {ScrapHelper.CATEGORY_NAME,
+                ScrapHelper.UNIT_PRICE};
+        Cursor c = db.query(scrapDatabaseHelper.TABLE_NAME_SCRAP_CATEGORY, selectedColumns, null, null, null, null, null, null);
+        Log.d(TAG,"moving cursor");
+        if(c.getCount()>0) {
+            c.moveToFirst();
+            Log.d(TAG,"The number of columns = "+c.getColumnCount());
+            Log.d(TAG,"The number of categories = "+c.getCount());
+            do{
+                String categoryName = c.getString(c.getColumnIndex(ScrapHelper.CATEGORY_NAME));
+                Log.d(TAG,categoryName);
+                Double unitPrice = c.getDouble(c.getColumnIndex(ScrapHelper.UNIT_PRICE));
+                Log.d(TAG,""+unitPrice);
+                PriceListPairs categoryUnitPricePair = new PriceListPairs(categoryName, unitPrice);
+                mPriceListPairs.add(categoryUnitPricePair);
+            }while (c.moveToNext());
+        }
+        c.close();
+        closeDB();
+
+        return mPriceListPairs;
     }
 
     //Next 4 Functions to be called when requesting for a pickup
