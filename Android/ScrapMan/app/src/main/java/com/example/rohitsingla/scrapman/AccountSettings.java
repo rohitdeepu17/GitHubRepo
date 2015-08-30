@@ -8,9 +8,14 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
+
+import java.sql.SQLException;
 
 
 public class AccountSettings extends Activity {
+    ScrapDatabaseAdapter mScrapDatabaseAdapter;
+
     EditText editTextName, editTextPhone, editTextAddress;
     Button buttonUpdate, buttonChangePassword;
 
@@ -18,6 +23,8 @@ public class AccountSettings extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_account_settings);
+
+        mScrapDatabaseAdapter = new ScrapDatabaseAdapter(this);
 
         editTextName = (EditText)findViewById(R.id.edit_text_name);
         editTextPhone = (EditText)findViewById(R.id.edit_text_phone);
@@ -34,6 +41,14 @@ public class AccountSettings extends Activity {
             @Override
             public void onClick(View v) {
                 //Update details in the database
+                try {
+                    mScrapDatabaseAdapter.updateProfile("rohitdeepu17@gmail.com", editTextName.getText().toString(), editTextPhone.getText().toString(), editTextAddress.getText().toString());
+                    Toast.makeText(AccountSettings.this, "Profile Updated Successfully", Toast.LENGTH_SHORT);
+                    Intent intent = new Intent(AccountSettings.this, HomePage.class);
+                    startActivity(intent);
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
             }
         });
 

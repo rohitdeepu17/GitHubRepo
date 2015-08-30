@@ -1,9 +1,12 @@
 package com.example.rohitsingla.scrapman;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -15,6 +18,8 @@ public class CheckPastRequests extends Activity {
     ScrapDatabaseAdapter mScrapDatabaseAdapter;
 
     ListView listViewPastRequests ;
+
+    ArrayList<PickupRequestData> mPickupRequestData = new ArrayList<PickupRequestData>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,7 +29,7 @@ public class CheckPastRequests extends Activity {
 
         listViewPastRequests = (ListView) findViewById(R.id.list_view_past_requests);
 
-        ArrayList<PickupRequestData> mPickupRequestData = new ArrayList<PickupRequestData>();
+        //ArrayList<PickupRequestData> mPickupRequestData = new ArrayList<PickupRequestData>();
         try {
             mPickupRequestData = mScrapDatabaseAdapter.getPickupRequests("rohitdeepu17@gmail.com");
         } catch (SQLException e) {
@@ -50,6 +55,18 @@ public class CheckPastRequests extends Activity {
 
         // Assign adapter to ListView
         listViewPastRequests.setAdapter(adapter);
+
+        listViewPastRequests.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(CheckPastRequests.this, PastRequestDetails.class);
+                intent.putExtra("requestId",mPickupRequestData.get(position).getmRequestId());
+                intent.putExtra("day",mPickupRequestData.get(position).getmDay());
+                intent.putExtra("timeSlot",mPickupRequestData.get(position).getmTimeSlot());
+                intent.putExtra("status",getStatusString(mPickupRequestData.get(position).getmStatus()));
+                startActivity(intent);
+            }
+        });
     }
 
     public String getStatusString(int status)
@@ -58,8 +75,10 @@ public class CheckPastRequests extends Activity {
             return "Requested";
         else if(status == 1)
             return "Accepted";
-        else
+        else if(status == 2)
             return "Picked";
+        else
+            return "Error";
     }
 
     @Override

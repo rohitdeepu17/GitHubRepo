@@ -24,17 +24,17 @@
         android:text="@string/request_pickup" />
 
     <Button
-        android:id="@+id/button_account_settings"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="16dp"
-        android:text="@string/account_settings" />
-
-    <Button
         android:id="@+id/button_check_past_requests"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="16dp"
         android:text="Check Past Requests"/>
+
+    <Button
+        android:id="@+id/button_account_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:text="@string/account_settings" />
 
 </LinearLayout>

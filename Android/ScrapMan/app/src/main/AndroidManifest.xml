@@ -44,6 +44,10 @@
             android:name=".CheckPastRequests"
             android:label="@string/title_activity_check_past_requests" >
         </activity>
+        <activity
+            android:name=".PastRequestDetails"
+            android:label="@string/title_activity_past_request_details" >
+        </activity>
     </application>
 
 </manifest>

@@ -88,6 +88,13 @@ public class ScrapDatabaseAdapter {
             return false;
     }
 
+    /**
+     * This fuctions check whether there already exists a user with the input username
+     *
+     * @param username
+     * @return
+     * @throws SQLException
+     */
     boolean checkIfUserAlreadyExists(String username) throws SQLException {
         openDBReadable();
 
@@ -171,6 +178,35 @@ public class ScrapDatabaseAdapter {
         return mPriceListPairs;
     }
 
+    ArrayList<RequestWeightsData> getWeightsDetails(int requestId) throws SQLException {
+        ArrayList<RequestWeightsData> mRequestWeightsData = new ArrayList<RequestWeightsData>();
+
+        openDBReadable();
+        //columns to be selected from TABLE_NAME_SCRAP_CATEGORY
+        String[] selectedColumns = {ScrapHelper.CATEGORY_NAME, ScrapHelper.WEIGHT};
+        Cursor c = db.query(scrapDatabaseHelper.TABLE_NAME_PICKUP_REQUEST_ITEMS, selectedColumns, scrapDatabaseHelper.REQUEST_ID + " =? ", new String[]{""+requestId}, null, null, null, null);
+        Log.d(TAG,"moving cursor");
+        if(c.getCount()>0) {
+            c.moveToFirst();
+            Log.d(TAG,"The number of columns = "+c.getColumnCount());
+            Log.d(TAG,"The number of categories = "+c.getCount());
+            do{
+                String categoryName = c.getString(c.getColumnIndex(ScrapHelper.CATEGORY_NAME));
+                Log.d(TAG,categoryName);
+                Double weight = c.getDouble(c.getColumnIndex(ScrapHelper.WEIGHT));
+                Log.d(TAG,""+weight);
+                RequestWeightsData categoryUnitPricePair = new RequestWeightsData(categoryName, weight);
+                //A modification can be done here to show only those items that are having weight>0
+                mRequestWeightsData.add(categoryUnitPricePair);
+            }while (c.moveToNext());
+        }
+        c.close();
+        closeDB();
+
+
+        return mRequestWeightsData;
+    }
+
     ArrayList<PickupRequestData> getPickupRequests(String username) throws SQLException {
         ArrayList<PickupRequestData> mPickupRequests = new ArrayList<PickupRequestData>();
         openDBReadable();
@@ -221,6 +257,28 @@ public class ScrapDatabaseAdapter {
         closeDB();
 
         return mPickupRequests;
+    }
+
+    void updateProfile(String username, String name, String phone, String address) throws SQLException {
+        openDBWritable();
+
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(scrapDatabaseHelper.NAME, name);
+        contentValues.put(scrapDatabaseHelper.PHONE, phone);
+        contentValues.put(scrapDatabaseHelper.ADDRESS, address);
+        db.update(scrapDatabaseHelper.TABLE_NAME_USER, contentValues, scrapDatabaseHelper.USERNAME + " = " + username, null);
+
+        closeDB();
+    }
+
+    void updatePassword(String username , String newPassword) throws SQLException {
+        openDBWritable();
+
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(scrapDatabaseHelper.PASSWD, newPassword);
+        db.update(scrapDatabaseHelper.TABLE_NAME_USER, contentValues, scrapDatabaseHelper.USERNAME + " = " + username, null);
+
+        closeDB();
     }
 
     //Next 4 Functions to be called when requesting for a pickup
