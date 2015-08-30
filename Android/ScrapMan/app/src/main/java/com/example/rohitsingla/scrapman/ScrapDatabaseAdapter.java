@@ -171,6 +171,58 @@ public class ScrapDatabaseAdapter {
         return mPriceListPairs;
     }
 
+    ArrayList<PickupRequestData> getPickupRequests(String username) throws SQLException {
+        ArrayList<PickupRequestData> mPickupRequests = new ArrayList<PickupRequestData>();
+        openDBReadable();
+
+        //getting list of request ids for this user
+        ArrayList<Integer> listRequestIds = new ArrayList<Integer>();
+        String[] selectedColumnsFromMakesPickupRequests = {ScrapHelper.REQUEST_ID};
+        Cursor cursor = db.query(scrapDatabaseHelper.TABLE_NAME_MAKES_PICKUP_REQUEST, selectedColumnsFromMakesPickupRequests, scrapDatabaseHelper.USERNAME + " =? ", new String[]{username}, null, null, null, null );
+        if(cursor.getCount()>0){
+            cursor.moveToFirst();
+            Log.d(TAG,"The number of columns = "+cursor.getColumnCount());
+            Log.d(TAG,"The number of categories = "+cursor.getCount());
+            do{
+                int requestId = cursor.getInt(cursor.getColumnIndex(ScrapHelper.REQUEST_ID));
+                Log.d(TAG,""+requestId);
+                listRequestIds.add(requestId);
+            }while(cursor.moveToNext());
+        }
+        cursor.close();
+
+        //getting data for all the above requestIds
+        for(int i=0;i<listRequestIds.size();i++){
+            //columns to be selected from TABLE_NAME_PICKUP_REQUEST
+            String[] selectedColumns = {ScrapHelper.DAY,
+                    ScrapHelper.TIME_SLOT, ScrapHelper.STATUS};
+            Cursor c = db.query(scrapDatabaseHelper.TABLE_NAME_PICKUP_REQUEST, selectedColumns, scrapDatabaseHelper.REQUEST_ID + " =? ", new String[]{listRequestIds.get(i).toString()}, null, null, null, null);
+            Log.d(TAG,"moving cursor");
+            if(c.getCount()>0) {
+                c.moveToFirst();
+                Log.d(TAG,"The number of columns = "+c.getColumnCount());
+                Log.d(TAG,"The number of categories = "+c.getCount());
+                do{
+                    int requestId = listRequestIds.get(i);
+                    Log.d(TAG,""+requestId);
+                    String day = c.getString(c.getColumnIndex(ScrapHelper.DAY));
+                    Log.d(TAG,day);
+                    String timeSlot = c.getString(c.getColumnIndex(ScrapHelper.TIME_SLOT));
+                    Log.d(TAG,timeSlot);
+                    int status = c.getInt(c.getColumnIndex(ScrapHelper.STATUS));
+                    Log.d(TAG,""+day);
+                    PickupRequestData categoryUnitPricePair = new PickupRequestData(requestId, day, timeSlot, status);
+                    mPickupRequests.add(categoryUnitPricePair);
+                }while (c.moveToNext());
+            }
+            c.close();
+        }
+
+        closeDB();
+
+        return mPickupRequests;
+    }
+
     //Next 4 Functions to be called when requesting for a pickup
 
     /**
@@ -185,6 +237,7 @@ public class ScrapDatabaseAdapter {
         ContentValues contentValues = new ContentValues();
         contentValues.put(scrapDatabaseHelper.DAY, day);
         contentValues.put(scrapDatabaseHelper.TIME_SLOT, timeSlot);
+        contentValues.put(scrapDatabaseHelper.STATUS, 0);
         long requestId = db.insert(scrapDatabaseHelper.TABLE_NAME_PICKUP_REQUEST, null, contentValues);
         closeDB();
         return requestId;
@@ -302,6 +355,7 @@ public class ScrapDatabaseAdapter {
         //private static String REQUEST_ID = "RequestId";       //defined in Primary Keys
         private static String DAY = "Day";
         private static String TIME_SLOT = "TimeSlot";
+        private static String STATUS = "Status";            //0->Requested by User, 1->Request Accepted and Confirmation Sent to user, 2->Picked Up from User
 
         //Fields : TABLE_NAME_SCRAP_CATEGORY                    Entity
         //private static String CATEGORY_NAME = "CategoryName";                 //defined in Primary Keys
@@ -330,7 +384,8 @@ public class ScrapDatabaseAdapter {
                 " ( " +
                 REQUEST_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 DAY + " VARCHAR(255), " +
-                TIME_SLOT + " VARCHAR(255) " +
+                TIME_SLOT + " VARCHAR(255), " +
+                STATUS + " INTEGER " +
                 ");";
 
         private static final String CREATE_TABLE_SCRAP_CATEGORY = "CREATE TABLE " + TABLE_NAME_SCRAP_CATEGORY +

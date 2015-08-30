@@ -1,6 +1,7 @@
 package com.example.rohitsingla.scrapman;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -72,9 +73,13 @@ public class RequestPickup extends Activity {
             public void onClick(View v) {
                 try {
                     Log.d(TAG, spinnerDay.getSelectedItem().toString()+spinnerTimeSlot.getSelectedItem().toString());
-                    for(int i=0;i<categoryNames.length;i++)
-                        Log.d(TAG, "The weight at index "+i+" = "+arrTemp[i]);
+                    for(int i=0;i<categoryNames.length;i++) {
+                        arrTemp[i] =
+                        Log.d(TAG, "The weight at index " + i + " = " + arrTemp[i]);
+                    }
                     mScrapDatabaseAdapter.requestPickup(spinnerDay.getSelectedItem().toString(), spinnerTimeSlot.getSelectedItem().toString(), "rohitdeepu17@gmail.com", categoryNames, arrTemp, categoryNames.length);
+                    Intent intent = new Intent(RequestPickup.this, CheckPastRequests.class);
+                    startActivity(intent);
                 } catch (SQLException e) {
                     e.printStackTrace();
                 }
@@ -152,7 +157,8 @@ public class RequestPickup extends Activity {
                 @Override
                 public void afterTextChanged(Editable arg0) {
                     // TODO Auto-generated method stub
-                    arrTemp[holder.ref] = Double.parseDouble(arg0.toString());      //Bug here : in case we erase entire double value 0.0
+                    if(arg0.length()>0)
+                        arrTemp[holder.ref] = Double.parseDouble(arg0.toString());      //Bug here : in case we erase entire double value 0.0
                 }
             });
 

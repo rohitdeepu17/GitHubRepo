@@ -11,7 +11,7 @@ import android.widget.Button;
 
 public class HomePage extends Activity {
 
-    Button buttonPriceList, buttonRequestPickup, buttonAccountSettings;
+    Button buttonPriceList, buttonRequestPickup, buttonAccountSettings, buttonCheckPastRequests;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +21,7 @@ public class HomePage extends Activity {
         buttonPriceList = (Button)findViewById(R.id.button_price_list);
         buttonRequestPickup = (Button)findViewById(R.id.button_request_pickup);
         buttonAccountSettings = (Button)findViewById(R.id.button_account_settings);
+        buttonCheckPastRequests = (Button)findViewById(R.id.button_check_past_requests);
 
         buttonPriceList.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,7 +47,13 @@ public class HomePage extends Activity {
             }
         });
 
-
+        buttonCheckPastRequests.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomePage.this, CheckPastRequests.class);
+                startActivity(intent);
+            }
+        });
     }
 
 

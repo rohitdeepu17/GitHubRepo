@@ -44,5 +44,6 @@
     <string name="hint_confirm_new_password">Confirm New Password</string>
     <string name="change_password">ChangePassword</string>
     <string name="change">Update Password</string>
+    <string name="title_activity_check_past_requests">CheckPastRequests</string>
 
 </resources>
