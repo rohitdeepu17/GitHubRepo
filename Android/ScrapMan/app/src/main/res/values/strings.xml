@@ -42,7 +42,7 @@
     <string name="hint_new_password">Enter New Password</string>
     <string name="confirm_new_passwd">Confirm New Password</string>
     <string name="hint_confirm_new_password">Confirm New Password</string>
-    <string name="change_password">ChangePassword</string>
+    <string name="change_password">Change Password</string>
     <string name="change">Update Password</string>
     <string name="title_activity_check_past_requests">CheckPastRequests</string>
     <string name="title_activity_past_request_details">PastRequestDetails</string>
@@ -50,5 +50,6 @@
     <string name="status">Status :</string>
     <string name="time_slot">Time-Slot :</string>
     <string name="day">Day :</string>
+    <string name="default_value">Default</string>
 
 </resources>

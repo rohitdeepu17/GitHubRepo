@@ -31,7 +31,7 @@ public class CheckPastRequests extends Activity {
 
         //ArrayList<PickupRequestData> mPickupRequestData = new ArrayList<PickupRequestData>();
         try {
-            mPickupRequestData = mScrapDatabaseAdapter.getPickupRequests("rohitdeepu17@gmail.com");
+            mPickupRequestData = mScrapDatabaseAdapter.getPickupRequests(HandleSharedPrefs.getUsernameSharedPref(CheckPastRequests.this));
         } catch (SQLException e) {
             e.printStackTrace();
         }

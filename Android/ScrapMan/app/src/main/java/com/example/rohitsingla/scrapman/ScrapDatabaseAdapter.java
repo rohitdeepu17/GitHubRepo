@@ -37,6 +37,22 @@ public class ScrapDatabaseAdapter {
 
     }
 
+    String[] getUserData(String username) throws SQLException {
+        openDBReadable();
+        String[] userData = new String[3];
+        //columns to be selected from user table
+        String[] selectedColumns = {
+                ScrapHelper.NAME, ScrapHelper.PHONE, ScrapHelper.ADDRESS};
+        Cursor c = db.query(scrapDatabaseHelper.TABLE_NAME_USER, selectedColumns, scrapDatabaseHelper.USERNAME + " =?", new String[]{username}, null, null, null, null);
+        c.moveToFirst();
+        userData[0] = c.getString(c.getColumnIndex(ScrapHelper.NAME));
+        userData[1] = c.getString(c.getColumnIndex(ScrapHelper.PHONE));
+        userData[2] = c.getString(c.getColumnIndex(ScrapHelper.ADDRESS));
+        c.close();
+        closeDB();
+        return userData;
+    }
+
     /**
      * function to verify login credentials from login page
      *
@@ -266,7 +282,7 @@ public class ScrapDatabaseAdapter {
         contentValues.put(scrapDatabaseHelper.NAME, name);
         contentValues.put(scrapDatabaseHelper.PHONE, phone);
         contentValues.put(scrapDatabaseHelper.ADDRESS, address);
-        db.update(scrapDatabaseHelper.TABLE_NAME_USER, contentValues, scrapDatabaseHelper.USERNAME + " = " + username, null);
+        db.update(scrapDatabaseHelper.TABLE_NAME_USER, contentValues, scrapDatabaseHelper.USERNAME + " = " + "\"" + username + "\"", null);
 
         closeDB();
     }
@@ -276,7 +292,7 @@ public class ScrapDatabaseAdapter {
 
         ContentValues contentValues = new ContentValues();
         contentValues.put(scrapDatabaseHelper.PASSWD, newPassword);
-        db.update(scrapDatabaseHelper.TABLE_NAME_USER, contentValues, scrapDatabaseHelper.USERNAME + " = " + username, null);
+        db.update(scrapDatabaseHelper.TABLE_NAME_USER, contentValues, scrapDatabaseHelper.USERNAME + " = " + "\"" + username + "\"", null);
 
         closeDB();
     }

@@ -3,6 +3,7 @@ package com.example.rohitsingla.scrapman;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -80,23 +81,30 @@ public class SignUpPage extends Activity {
 
                 //if all checks are done successfully, register new user
                 //For the time, commenting this code to make PriceList work
-                /*if(flag) {
+                if(flag) {
                     try {
+                        Log.d(TAG, "Username : "+username);
+                        Log.d(TAG, "Password : "+passwd);
+                        Log.d(TAG, "Name : "+name);
+                        Log.d(TAG, "Phone : "+phone);
+                        Log.d(TAG, "Address : "+address);
                         mScrapDatabaseAdapter.createNewUser(username,passwd,name,phone,address);
+                        HandleSharedPrefs.saveUsernameSharedPref(SignUpPage.this, "username", username);
                         Toast.makeText(SignUpPage.this, "User Registered Successfully", Toast.LENGTH_SHORT).show();
                     } catch (SQLException e) {
                         e.printStackTrace();
                     }
                     Intent intent = new Intent(SignUpPage.this, HomePage.class);
-                    intent.putExtra("username",username);
+                   // intent.putExtra("username",username);
                     startActivity(intent);
-                }*/
-                Intent intent = new Intent(SignUpPage.this, HomePage.class);
+                }
+                /*Intent intent = new Intent(SignUpPage.this, HomePage.class);
                 intent.putExtra("username",username);
-                startActivity(intent);
+                startActivity(intent);*/
             }
         });
     }
+
 
 
     @Override

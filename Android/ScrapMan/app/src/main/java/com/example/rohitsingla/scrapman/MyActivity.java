@@ -52,14 +52,6 @@ public class MyActivity extends Activity {
             e.printStackTrace();
         }
 
-        //debugging starts here
-        try {
-            mScrapDatabaseAdapter.getPassword("rohitdeepu17@gmail.com");
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        //debugging ends here
-
         editTextUsername = (EditText)findViewById(R.id.edit_text_username);
         editTextPassword = (EditText)findViewById(R.id.edit_text_password);
 
@@ -77,8 +69,9 @@ public class MyActivity extends Activity {
                     Log.d(TAG, "username : "+username+", password : "+passwd);
                     if(username != null && username.length()!=0 && passwd != null && passwd.length()!=0 && mScrapDatabaseAdapter.verifyLoginCredentials(username, passwd))
                     {
+                        HandleSharedPrefs.saveUsernameSharedPref(MyActivity.this, "username", editTextUsername.getText().toString());
                         Intent intent = new Intent(MyActivity.this,HomePage.class);
-                        intent.putExtra("username", editTextUsername.getText().toString());
+                        //intent.putExtra("username", editTextUsername.getText().toString());
                         startActivity(intent);
                     }
                     else
@@ -100,6 +93,8 @@ public class MyActivity extends Activity {
             }
         });
     }
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

@@ -1,6 +1,7 @@
 package com.example.rohitsingla.scrapman;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -49,7 +50,7 @@ public class ChangePassword extends Activity {
 
                 //verify current password, using verifyLoginCredentials function
                 try {
-                    if(flag && !mScrapDatabaseAdapter.verifyLoginCredentials("rohitdeepu17@gmail.com", currentPassword)){
+                    if(flag && !mScrapDatabaseAdapter.verifyLoginCredentials(HandleSharedPrefs.getUsernameSharedPref(ChangePassword.this), currentPassword)){
                         Toast.makeText(ChangePassword.this, "Sorry, You have entered wrong current password", Toast.LENGTH_SHORT).show();
                         flag = false;
                     }
@@ -66,7 +67,11 @@ public class ChangePassword extends Activity {
                 //if no error so far, update password for this user
                 if(flag){
                     try {
-                        mScrapDatabaseAdapter.updatePassword("rohitdeepu17@gmail.com", newPassword);
+                        mScrapDatabaseAdapter.updatePassword(HandleSharedPrefs.getUsernameSharedPref(ChangePassword.this), newPassword);
+                        Toast.makeText(ChangePassword.this, "Password Changed Successfully", Toast.LENGTH_SHORT);
+                        Intent intent = new Intent(ChangePassword.this, HomePage.class);
+                        startActivity(intent);
+                        finish();
                     } catch (SQLException e) {
                         e.printStackTrace();
                     }

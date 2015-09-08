@@ -73,11 +73,11 @@ public class RequestPickup extends Activity {
             public void onClick(View v) {
                 try {
                     Log.d(TAG, spinnerDay.getSelectedItem().toString()+spinnerTimeSlot.getSelectedItem().toString());
+                    Log.d(TAG, "The number of categories = "+categoryNames.length);
                     for(int i=0;i<categoryNames.length;i++) {
-                        arrTemp[i] =
                         Log.d(TAG, "The weight at index " + i + " = " + arrTemp[i]);
                     }
-                    mScrapDatabaseAdapter.requestPickup(spinnerDay.getSelectedItem().toString(), spinnerTimeSlot.getSelectedItem().toString(), "rohitdeepu17@gmail.com", categoryNames, arrTemp, categoryNames.length);
+                    mScrapDatabaseAdapter.requestPickup(spinnerDay.getSelectedItem().toString(), spinnerTimeSlot.getSelectedItem().toString(), HandleSharedPrefs.getUsernameSharedPref(RequestPickup.this), categoryNames, arrTemp, categoryNames.length);
                     Intent intent = new Intent(RequestPickup.this, CheckPastRequests.class);
                     startActivity(intent);
                 } catch (SQLException e) {

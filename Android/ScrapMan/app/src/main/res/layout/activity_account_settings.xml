@@ -21,12 +21,12 @@
             android:text="@string/username_email"/>
 
         <TextView
-            android:id="@+id/edit_text_username_email"
+            android:id="@+id/text_view_username_email"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:textSize="16dp"
-            android:text="abc@gmail.com"/>
+            android:text="@string/default_value"/>
 
     </LinearLayout>
 

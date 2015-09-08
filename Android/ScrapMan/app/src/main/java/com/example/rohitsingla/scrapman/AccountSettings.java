@@ -8,6 +8,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.sql.SQLException;
@@ -19,6 +20,8 @@ public class AccountSettings extends Activity {
     EditText editTextName, editTextPhone, editTextAddress;
     Button buttonUpdate, buttonChangePassword;
 
+    TextView textViewUsername;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,23 +29,31 @@ public class AccountSettings extends Activity {
 
         mScrapDatabaseAdapter = new ScrapDatabaseAdapter(this);
 
+        textViewUsername = (TextView)findViewById(R.id.text_view_username_email);
         editTextName = (EditText)findViewById(R.id.edit_text_name);
         editTextPhone = (EditText)findViewById(R.id.edit_text_phone);
         editTextAddress = (EditText)findViewById(R.id.edit_text_address);
         buttonUpdate = (Button)findViewById(R.id.button_update);
         buttonChangePassword = (Button)findViewById(R.id.button_change_password);
 
+        textViewUsername.setText(HandleSharedPrefs.getUsernameSharedPref(AccountSettings.this));
         //Temporarily setting default values
-        editTextName.setText("Rohit Singla");
-        editTextPhone.setText("7259890479");
-        editTextAddress.setText("4073, Sobha Daisy");
+        String[] userData = new String[3];
+        try {
+            userData = mScrapDatabaseAdapter.getUserData(HandleSharedPrefs.getUsernameSharedPref(AccountSettings.this));
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        editTextName.setText(userData[0]);
+        editTextPhone.setText(userData[1]);
+        editTextAddress.setText(userData[2]);
 
         buttonUpdate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //Update details in the database
                 try {
-                    mScrapDatabaseAdapter.updateProfile("rohitdeepu17@gmail.com", editTextName.getText().toString(), editTextPhone.getText().toString(), editTextAddress.getText().toString());
+                    mScrapDatabaseAdapter.updateProfile(HandleSharedPrefs.getUsernameSharedPref(AccountSettings.this), editTextName.getText().toString(), editTextPhone.getText().toString(), editTextAddress.getText().toString());
                     Toast.makeText(AccountSettings.this, "Profile Updated Successfully", Toast.LENGTH_SHORT);
                     Intent intent = new Intent(AccountSettings.this, HomePage.class);
                     startActivity(intent);
