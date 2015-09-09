@@ -17,6 +17,7 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -74,12 +75,19 @@ public class RequestPickup extends Activity {
                 try {
                     Log.d(TAG, spinnerDay.getSelectedItem().toString()+spinnerTimeSlot.getSelectedItem().toString());
                     Log.d(TAG, "The number of categories = "+categoryNames.length);
+                    double sum = 0.0;
                     for(int i=0;i<categoryNames.length;i++) {
                         Log.d(TAG, "The weight at index " + i + " = " + arrTemp[i]);
+                        sum += arrTemp[i];
                     }
-                    mScrapDatabaseAdapter.requestPickup(spinnerDay.getSelectedItem().toString(), spinnerTimeSlot.getSelectedItem().toString(), HandleSharedPrefs.getUsernameSharedPref(RequestPickup.this), categoryNames, arrTemp, categoryNames.length);
-                    Intent intent = new Intent(RequestPickup.this, CheckPastRequests.class);
-                    startActivity(intent);
+                    if(sum > 0.0) {
+                        mScrapDatabaseAdapter.requestPickup(spinnerDay.getSelectedItem().toString(), spinnerTimeSlot.getSelectedItem().toString(), HandleSharedPrefs.getUsernameSharedPref(RequestPickup.this), categoryNames, arrTemp, categoryNames.length);
+                        Intent intent = new Intent(RequestPickup.this, CheckPastRequests.class);
+                        startActivity(intent);
+                        finish();
+                    }else{
+                        Toast.makeText(RequestPickup.this, "Sorry, you have to request pickup for at least one category", Toast.LENGTH_SHORT).show();
+                    }
                 } catch (SQLException e) {
                     e.printStackTrace();
                 }

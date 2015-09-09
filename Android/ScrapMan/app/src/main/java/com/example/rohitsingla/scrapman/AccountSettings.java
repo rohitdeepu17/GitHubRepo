@@ -57,6 +57,7 @@ public class AccountSettings extends Activity {
                     Toast.makeText(AccountSettings.this, "Profile Updated Successfully", Toast.LENGTH_SHORT);
                     Intent intent = new Intent(AccountSettings.this, HomePage.class);
                     startActivity(intent);
+                    finish();
                 } catch (SQLException e) {
                     e.printStackTrace();
                 }
@@ -68,6 +69,7 @@ public class AccountSettings extends Activity {
             public void onClick(View v) {
                 Intent intent = new Intent(AccountSettings.this, ChangePassword.class);
                 startActivity(intent);
+                finish();
             }
         });
     }

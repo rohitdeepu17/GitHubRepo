@@ -95,12 +95,10 @@ public class SignUpPage extends Activity {
                         e.printStackTrace();
                     }
                     Intent intent = new Intent(SignUpPage.this, HomePage.class);
-                   // intent.putExtra("username",username);
                     startActivity(intent);
+                    finish();
+
                 }
-                /*Intent intent = new Intent(SignUpPage.this, HomePage.class);
-                intent.putExtra("username",username);
-                startActivity(intent);*/
             }
         });
     }

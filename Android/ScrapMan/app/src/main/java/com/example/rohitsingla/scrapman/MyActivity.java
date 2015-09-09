@@ -42,6 +42,12 @@ public class MyActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my);
+        /* TODO : Why onCreate is being called for an activity instance already on the stack?
+         * Reason : new intent launched
+          * But where does prev instance of this activity goes from activity stack?*/
+        if(getIntent().getBooleanExtra("EXIT",false)){
+            finish();
+        }
         Log.d(TAG, "Inside onCreate of MyActivity");
         mScrapDatabaseAdapter = new ScrapDatabaseAdapter(this);
 
@@ -73,6 +79,7 @@ public class MyActivity extends Activity {
                         Intent intent = new Intent(MyActivity.this,HomePage.class);
                         //intent.putExtra("username", editTextUsername.getText().toString());
                         startActivity(intent);
+                        finish();
                     }
                     else
                     {
