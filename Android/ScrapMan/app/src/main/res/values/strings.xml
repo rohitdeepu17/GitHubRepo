@@ -21,7 +21,7 @@
     <string name="hint_address">Enter your pickup address</string>
     <string name="title_activity_home_page">HomePage</string>
     <string name="submit">Submit</string>
-    <string name="price_list">Check Price List</string>
+    <string name="price_list">Price List</string>
     <string name="account_settings">Account Settings</string>
     <string name="request_pickup">Request Pickup</string>
     <string name="title_activity_price_list">PriceList</string>
@@ -51,5 +51,14 @@
     <string name="time_slot">Time-Slot :</string>
     <string name="day">Day :</string>
     <string name="default_value">Default</string>
+    <string name="terms_and_conditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="contact_us">Contact Us</string>
+    <string name="past_requests">Past Requests</string>
+    <string name="title_activity_terms_and_conditions">TermsAndConditions</string>
+    <string name="title_activity_contact_us">ContactUs</string>
+    <string name="call_us">Call us at <a href="tel:+91 7259890479">+91 7259890479</a></string>
+    <string name="email_us">Email us at <a href="mailto:rohitdeepu17@gmail.com">rohitdeepu17@gmail.com</a></string>
+    <string name="office_address">Office Address</string>
+    <string name="office_address_detail">1111, Sobha Daisy,\nGreen Glen Layout,\nBellandur, Bangalore,\nPin Code : 560103</string>
 
 </resources>
