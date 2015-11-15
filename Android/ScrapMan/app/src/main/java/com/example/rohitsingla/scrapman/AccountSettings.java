@@ -36,11 +36,11 @@ public class AccountSettings extends Activity {
         buttonUpdate = (Button)findViewById(R.id.button_update);
         buttonChangePassword = (Button)findViewById(R.id.button_change_password);
 
-        textViewUsername.setText(HandleSharedPrefs.getUsernameSharedPref(AccountSettings.this));
-        //Temporarily setting default values
+        textViewUsername.setText(HandleSharedPrefs.getSharedPrefValue(AccountSettings.this,"username"));
+
         String[] userData = new String[3];
         try {
-            userData = mScrapDatabaseAdapter.getUserData(HandleSharedPrefs.getUsernameSharedPref(AccountSettings.this));
+            userData = mScrapDatabaseAdapter.getUserData(HandleSharedPrefs.getSharedPrefValue(AccountSettings.this,"username"));
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -53,7 +53,7 @@ public class AccountSettings extends Activity {
             public void onClick(View v) {
                 //Update details in the database
                 try {
-                    mScrapDatabaseAdapter.updateProfile(HandleSharedPrefs.getUsernameSharedPref(AccountSettings.this), editTextName.getText().toString(), editTextPhone.getText().toString(), editTextAddress.getText().toString());
+                    mScrapDatabaseAdapter.updateProfile(HandleSharedPrefs.getSharedPrefValue(AccountSettings.this,"username"), editTextName.getText().toString(), editTextPhone.getText().toString(), editTextAddress.getText().toString());
                     Toast.makeText(AccountSettings.this, "Profile Updated Successfully", Toast.LENGTH_SHORT);
                     Intent intent = new Intent(AccountSettings.this, HomePage.class);
                     startActivity(intent);

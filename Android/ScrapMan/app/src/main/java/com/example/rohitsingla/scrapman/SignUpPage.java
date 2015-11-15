@@ -89,7 +89,7 @@ public class SignUpPage extends Activity {
                         Log.d(TAG, "Phone : "+phone);
                         Log.d(TAG, "Address : "+address);
                         mScrapDatabaseAdapter.createNewUser(username,passwd,name,phone,address);
-                        HandleSharedPrefs.saveUsernameSharedPref(SignUpPage.this, "username", username);
+                        HandleSharedPrefs.saveUsernameSharedPref(SignUpPage.this, "username", username, "passwd", passwd);
                         Toast.makeText(SignUpPage.this, "User Registered Successfully", Toast.LENGTH_SHORT).show();
                     } catch (SQLException e) {
                         e.printStackTrace();

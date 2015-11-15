@@ -81,7 +81,7 @@ public class RequestPickup extends Activity {
                         sum += arrTemp[i];
                     }
                     if(sum > 0.0) {
-                        mScrapDatabaseAdapter.requestPickup(spinnerDay.getSelectedItem().toString(), spinnerTimeSlot.getSelectedItem().toString(), HandleSharedPrefs.getUsernameSharedPref(RequestPickup.this), categoryNames, arrTemp, categoryNames.length);
+                        mScrapDatabaseAdapter.requestPickup(spinnerDay.getSelectedItem().toString(), spinnerTimeSlot.getSelectedItem().toString(), HandleSharedPrefs.getSharedPrefValue(RequestPickup.this, "username"), categoryNames, arrTemp, categoryNames.length);
                         Intent intent = new Intent(RequestPickup.this, CheckPastRequests.class);
                         startActivity(intent);
                         finish();

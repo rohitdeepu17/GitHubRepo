@@ -20,6 +20,7 @@ public class MyActivity extends Activity {
 
     ScrapDatabaseAdapter mScrapDatabaseAdapter;
 
+    String username, passwd;
     String TAG = "MyActivity";
 
     String[] categoryNames = new String[]{
@@ -42,18 +43,36 @@ public class MyActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my);
+
         /* TODO : Why onCreate is being called for an activity instance already on the stack?
          * Reason : new intent launched
           * But where does prev instance of this activity goes from activity stack?*/
-        if(getIntent().getBooleanExtra("EXIT",false)){
+        /*if(getIntent().getBooleanExtra("EXIT",false)){
             finish();
-        }
+        }*/
+
         Log.d(TAG, "Inside onCreate of MyActivity");
         mScrapDatabaseAdapter = new ScrapDatabaseAdapter(this);
 
         //For the time being, create price list on the user end
         try {
             mScrapDatabaseAdapter.createPriceList(categoryNames, prices, categoryNames.length);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        //check the values of shared preferences username and password :
+        //If they are not null and matches some user credentials in the database(need to check this also,
+        //because user might have changed his credentials through website), directly launch HomePage with sharedPref credentials
+        username = HandleSharedPrefs.getSharedPrefValue(MyActivity.this, "username");
+        passwd = HandleSharedPrefs.getSharedPrefValue(MyActivity.this, "passwd");
+
+        try {
+            if(username != null && username.length()!=0 && passwd != null && passwd.length()!=0 && mScrapDatabaseAdapter.verifyLoginCredentials(username, passwd)){
+                Intent intent = new Intent(MyActivity.this,HomePage.class);
+                startActivity(intent);
+                finish();
+            }
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -70,12 +89,12 @@ public class MyActivity extends Activity {
                 //login with proper error handling
                 //if correct credentials, take user to HomePage
                 try {
-                    String username = editTextUsername.getText().toString();
-                    String passwd = editTextPassword.getText().toString();
+                    username = editTextUsername.getText().toString();
+                    passwd = editTextPassword.getText().toString();
                     Log.d(TAG, "username : "+username+", password : "+passwd);
                     if(username != null && username.length()!=0 && passwd != null && passwd.length()!=0 && mScrapDatabaseAdapter.verifyLoginCredentials(username, passwd))
                     {
-                        HandleSharedPrefs.saveUsernameSharedPref(MyActivity.this, "username", editTextUsername.getText().toString());
+                        HandleSharedPrefs.saveUsernameSharedPref(MyActivity.this, "username", username, "passwd", passwd);
                         Intent intent = new Intent(MyActivity.this,HomePage.class);
                         //intent.putExtra("username", editTextUsername.getText().toString());
                         startActivity(intent);

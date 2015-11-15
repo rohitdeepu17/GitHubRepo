@@ -11,7 +11,7 @@ import android.widget.Button;
 
 
 public class HomePage extends Activity {
-    Button buttonPriceList, buttonRequestPickup, buttonAccountSettings, buttonCheckPastRequests, buttonTnCs, buttonContactUs;
+    Button buttonPriceList, buttonRequestPickup, buttonAccountSettings, buttonCheckPastRequests, buttonTnCs, buttonContactUs, buttonAboutUs, buttonLogOut;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +49,16 @@ public class HomePage extends Activity {
         img = getApplicationContext().getResources().getDrawable( R.drawable.contact_us );
         img.setBounds( 0, 30, 230, 230 );
         buttonContactUs.setCompoundDrawables(null, img, null, null);
+
+        buttonAboutUs = (Button)findViewById(R.id.button_about_us);
+        img = getApplicationContext().getResources().getDrawable( R.drawable.about_us );
+        img.setBounds( 0, 30, 230, 230 );
+        buttonAboutUs.setCompoundDrawables(null, img, null, null);
+
+        buttonLogOut = (Button)findViewById(R.id.button_log_out);
+        img = getApplicationContext().getResources().getDrawable( R.drawable.log_out );
+        img.setBounds( 0, 30, 230, 230 );
+        buttonLogOut.setCompoundDrawables(null, img, null, null);
 
         buttonPriceList.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -97,16 +107,36 @@ public class HomePage extends Activity {
                 startActivity(intent);
             }
         });
+
+        buttonAboutUs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomePage.this, AboutUs.class);
+                startActivity(intent);
+            }
+        });
+
+        buttonLogOut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //make the shared preferences null
+                HandleSharedPrefs.saveUsernameSharedPref(HomePage.this, "username", null, "passwd", null);
+                //go to login page
+                Intent intent = new Intent(HomePage.this, MyActivity.class);
+                startActivity(intent);
+            }
+        });
     }
+
      // TODO : this to be replaced by activity stack clearance.
-    @Override
+    /*@Override
     public void onBackPressed() {
         super.onBackPressed();
         Intent intent = new Intent(this, MyActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         intent.putExtra("EXIT", true);
         startActivity(intent);
-    }
+    }*/
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

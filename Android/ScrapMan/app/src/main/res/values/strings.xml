@@ -60,5 +60,8 @@
     <string name="email_us">Email us at <a href="mailto:rohitdeepu17@gmail.com">rohitdeepu17@gmail.com</a></string>
     <string name="office_address">Office Address</string>
     <string name="office_address_detail">1111, Sobha Daisy,\nGreen Glen Layout,\nBellandur, Bangalore,\nPin Code : 560103</string>
+    <string name="log_out">Log-out</string>
+    <string name="about_us">About Us</string>
+    <string name="title_activity_about_us">AboutUs</string>
 
 </resources>
