@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".SortVizActivity">
+    <EditText
+        android:id="@+id/edit_text_number_of_elements"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="@string/number_of_elements"/>
+
+    <Button
+        android:id="@+id/button_generate_array"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/generate_array"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_heap_sort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/heap_sort"/>
+
+        <Button
+            android:id="@+id/button_bucket_sort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bucket_sort"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_view_array"
+        android:text="@string/array_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
