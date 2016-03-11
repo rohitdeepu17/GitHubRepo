@@ -39,6 +39,9 @@ public class MyActivity extends Activity implements ConnectionCallbacks,OnConnec
         then distance between p2 and p3 should not get added to distance starting from p3.*/
     private boolean mLocationUpdatesJustStarted = true;
 
+    //boolean to check if this activity is in foreground to avoid unnecessary toasts
+    private boolean isCurrentActivityInForeground = false;
+
     private LocationRequest mLocationRequest;
 
     // Location updates intervals in sec
@@ -47,9 +50,9 @@ public class MyActivity extends Activity implements ConnectionCallbacks,OnConnec
     private static int DISPLACEMENT = 10; // 10 meters
 
     //to save distance travelled
-    private static int DISTANCE_TRAVELLED = 0;
-    private static int DISTANCE_TRAVELLED_LOCATION_API = 0;
-    private static int DISTANCE_TRAVELLED_RADIUS = 0;
+    private static double DISTANCE_TRAVELLED = 0;
+    private static double DISTANCE_TRAVELLED_LOCATION_API = 0;
+    private static double DISTANCE_TRAVELLED_RADIUS = 0;
 
     // UI elements
     private TextView lblLocation,distTravelled;
@@ -98,6 +101,7 @@ public class MyActivity extends Activity implements ConnectionCallbacks,OnConnec
     @Override
     protected void onStart() {
         super.onStart();
+        Log.d(TAG, "Inside onResume()");
         if (mGoogleApiClient != null) {
             mGoogleApiClient.connect();
         }
@@ -107,26 +111,37 @@ public class MyActivity extends Activity implements ConnectionCallbacks,OnConnec
     protected void onResume() {
         super.onResume();
 
-        checkPlayServices();
+        //setting foreground flag to true
+        isCurrentActivityInForeground = true;
 
-        // Resuming the periodic location updates
-        if (mGoogleApiClient.isConnected() && mRequestingLocationUpdates) {
-            startLocationUpdates();
-        }
+        checkPlayServices();
+        Log.d(TAG, "Inside onResume()");
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        if (mGoogleApiClient.isConnected()) {
-            mGoogleApiClient.disconnect();
-        }
+        Log.d(TAG, "Inside onStop()");
     }
 
     @Override
     protected void onPause() {
         super.onPause();
+        Log.d(TAG, "Inside onPause()");
+
+        //as another activity comes into foreground, making the foreground flag as false
+        isCurrentActivityInForeground = false;
+    }
+
+    @Override
+    protected void onDestroy(){
+        super.onDestroy();
+        Log.d(TAG, "Inside onDestroy()");
+        //stopping location updates
         stopLocationUpdates();
+        //disconnecting google API client
+        if(mGoogleApiClient.isConnected())
+            mGoogleApiClient.disconnect();
     }
 
     /**
@@ -262,7 +277,7 @@ public class MyActivity extends Activity implements ConnectionCallbacks,OnConnec
      * Starting the location updates
      * */
     protected void startLocationUpdates() {
-
+        Log.d(TAG,"Starting location updates");
         LocationServices.FusedLocationApi.requestLocationUpdates(
                 mGoogleApiClient, mLocationRequest, this);
 
@@ -272,6 +287,7 @@ public class MyActivity extends Activity implements ConnectionCallbacks,OnConnec
      * Stopping location updates
      */
     protected void stopLocationUpdates() {
+        Log.d(TAG,"Stopping location updates");
         LocationServices.FusedLocationApi.removeLocationUpdates(
                 mGoogleApiClient, this);
     }
@@ -305,8 +321,8 @@ public class MyActivity extends Activity implements ConnectionCallbacks,OnConnec
     public void onLocationChanged(Location location) {
         // Assign the new location
         mLastLocation = location;
-
-        Toast.makeText(getApplicationContext(), "Location changed!",
+        if(isCurrentActivityInForeground)
+            Toast.makeText(getApplicationContext(), "Location changed!",
                 Toast.LENGTH_SHORT).show();
 
         // Displaying the new location on UI
