@@ -48,6 +48,7 @@ public class MyActivity extends Activity implements ConnectionCallbacks,OnConnec
 
     //to save distance travelled
     private static int DISTANCE_TRAVELLED = 0;
+    private static int DISTANCE_TRAVELLED_LOCATION_API = 0;
 
     // UI elements
     private TextView lblLocation,distTravelled;
@@ -139,6 +140,7 @@ public class MyActivity extends Activity implements ConnectionCallbacks,OnConnec
             double latitude = mLastLocation.getLatitude();
             double longitude = mLastLocation.getLongitude();
             //getting previous location from text view if location updates are not just started
+            Log.d(TAG,"mLocationUpdatesJustStarted = "+mLocationUpdatesJustStarted);
             if(!mLocationUpdatesJustStarted){
                 String previousLocation = lblLocation.getText().toString();
                 double previousLatitude, previousLongitude;
@@ -150,16 +152,17 @@ public class MyActivity extends Activity implements ConnectionCallbacks,OnConnec
                         Log.d(TAG, "Calculating distance between (" + previousLatitude + ", " + previousLongitude + ") and (" + latitude + "," + longitude + ") in metres.");
                         //updating distance travelled
                         DISTANCE_TRAVELLED += distance(previousLatitude,previousLongitude,latitude,longitude,"m");
+                        DISTANCE_TRAVELLED_LOCATION_API += distanceLocationAPI(previousLatitude,previousLongitude,latitude,longitude,"m");
                     }
                 }
             }
 
             //update location updates just started flag
-            if(!mLocationUpdatesJustStarted)
+            if(mLocationUpdatesJustStarted)
                 mLocationUpdatesJustStarted = false;
 
             lblLocation.setText(latitude + ", " + longitude);
-            distTravelled.setText("Distance Travelled = "+DISTANCE_TRAVELLED +" mtrs");
+            distTravelled.setText("Distance Travelled (as per geolocation) = "+DISTANCE_TRAVELLED +" mtrs"+"\nDistance Travelled (as per Location) = "+DISTANCE_TRAVELLED_LOCATION_API +" mtrs");
 
         } else {
 
@@ -181,6 +184,7 @@ public class MyActivity extends Activity implements ConnectionCallbacks,OnConnec
 
             //resetting distance travelled to 0 and updates just started flag to true
             DISTANCE_TRAVELLED = 0;
+            DISTANCE_TRAVELLED_LOCATION_API = 0;
             mLocationUpdatesJustStarted = true;
 
             // Starting the location updates
@@ -316,8 +320,6 @@ public class MyActivity extends Activity implements ConnectionCallbacks,OnConnec
         dist = dist * 60 * 1.1515;          //this is in miles
         if (unit == "K") {                  //kilometres
             dist = dist * 1.609344;
-        } else if (unit == "N") {           //nauticle miles
-            dist = dist * 0.8684;
         }else if (unit == "m"){             //metres
             dist = dist * 1.609344 * 1000;
         }
@@ -341,6 +343,35 @@ public class MyActivity extends Activity implements ConnectionCallbacks,OnConnec
      */
     private static double rad2deg(double rad) {
         return (rad * 180 / Math.PI);
+    }
+
+    /**
+     * This function returns the distance(as per android.location.Location.distanceTo API definitions) between to geo locations in the given units as input
+     * @param lat1 latitude of the first point
+     * @param lon1 longitude of the first point
+     * @param lat2 latitude of the second point
+     * @param lon2 longitude of the second point
+     * @param unit unit in which distance is to be calculated
+     * @return distance between two input points
+     */
+    private static double distanceLocationAPI(double lat1, double lon1, double lat2, double lon2, String unit){
+        Location loc1 = new Location("");
+        loc1.setLatitude(lat1);
+        loc1.setLongitude(lon1);
+
+        Location loc2 = new Location("");
+        loc2.setLatitude(lat2);
+        loc2.setLongitude(lon2);
+
+        double dist = loc1.distanceTo(loc2); //in meters
+
+        if (unit == "K") {                  //kilometres
+            dist = dist * 1000;
+        }else if (unit == "M"){             //miles
+            dist = dist * 1000 * 0.621371 ;
+        }
+
+        return dist;
     }
 
 }
