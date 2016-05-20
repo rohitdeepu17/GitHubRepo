@@ -44,7 +44,7 @@ public class SortVizActivity extends Activity implements SortObserver{
                     for(int i=0;i<n;i++)
                         arrayString.append(arrayToSort.get(i) + " ");
                     Log.d(TAG, "Initial Array = "+arrayString);
-                    textViewArray.setText(arrayString);
+                    textViewArray.setText("Initial Array = "+arrayString);
                 }
             }
         });
