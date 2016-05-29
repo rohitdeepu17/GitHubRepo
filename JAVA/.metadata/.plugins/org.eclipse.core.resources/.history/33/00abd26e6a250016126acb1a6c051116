@@ -1,0 +1,46 @@
+
+public class SynchronizationExample {
+	public static void main(String[] args) throws InterruptedException{
+		ProcessingThread pt = new ProcessingThread();
+		Thread t1 = new Thread(pt,"t1");
+		Thread t2 = new Thread(pt,"t2");
+		t1.start();
+		t2.start();
+		t1.join();
+		t2.join();
+		System.out.println("The value of count = "+pt.getCount());
+	}
+	
+}
+
+class ProcessingThread implements Runnable{
+	//dummy object variable for synchronization
+	private Object mutex=new Object();
+	
+	private int count=0;
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		for(int i=1;i<5;i++){
+			doSomething(i);
+			//count++;
+			//using synchronized block to read, increment and update count value synchronously
+			synchronized (mutex) {
+			        count++;
+			}
+		}
+	}
+	
+	public int getCount(){
+		return this.count;
+	}
+	
+	private void doSomething(int i){
+		try{
+			Thread.sleep(i*1000);
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+	}
+	
+}

@@ -1,0 +1,35 @@
+
+public class SynchronizationExample {
+	public static void main(String[] args) throws InterruptedException{
+		ProcessingThread pt = new ProcessingThread();
+		Thread t1 = new Thread(pt,"t1");
+		Thread t2 = new Thread(pt,"t2");
+		System.out.println("The value of count = "+pt.getCount());
+	}
+	
+}
+
+class ProcessingThread implements Runnable{
+	private int count=0;
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		for(int i=1;i<5;i++){
+			doSomething();
+			count++;
+		}
+	}
+	
+	public int getCount(){
+		return this.count;
+	}
+	
+	private void doSomething(i){
+		try{
+			Thread.sleep(i*1000);
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+	}
+	
+}

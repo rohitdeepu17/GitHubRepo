@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:textSize="20dp"
+        android:textColor="#ff0000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="ViewStub Example : Try inflating in both orders : 1->2 and 2->1,
+        and you will observe that ViewStub doesn't occupy space" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="ViewStub 1" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="ViewStub 2" />
+
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button2"
+        android:layout_marginTop="30dp"
+        android:layout_centerVertical="true" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ViewStub
+                android:id="@+id/viewStub1"
+                android:layout="@layout/subtree1"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content" />
+
+
+            <ViewStub
+                android:id="@+id/viewStub2"
+                android:layout="@layout/subtree2"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content" />
+
+
+        </TableRow>
+
+    </TableLayout>
+
+
+</RelativeLayout>

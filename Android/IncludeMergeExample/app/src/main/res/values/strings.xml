@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">IncludeMergeExample</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello">Hello : Header with merge included statically, Footer without merge included statically, items with merge included dynamically</string>
+
+</resources>

@@ -16,13 +16,13 @@
 		<item value="-23" key="DIALOG_Y_ORIGIN"/>
 		<item value="12" key="DIALOG_X_ORIGIN"/>
 	</section>
+	<section name="NewWizardAction">
+	</section>
 	<section name="ZipFileImportWizard">
 		<item value="false" key="WizardZipFileResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
 		<list key="WizardZipFileResourceImportPage1.STORE_SOURCE_NAMES_ID">
 			<item value="/Users/rohitsingla/Downloads/mailapi-1.5.5.jar"/>
 		</list>
-	</section>
-	<section name="NewWizardAction">
 	</section>
 	<section name="EditorSelectionDialog">
 		<item value="false" key="EditorSelectionDialog.STORE_ID_INTERNAL_EXTERNAL"/>
