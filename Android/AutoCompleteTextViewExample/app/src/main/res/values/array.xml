@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="list_countries">
+        <item>India</item>
+        <item>Italy</item>
+        <item>Iran</item>
+        <item>USA</item>
+        <item>UK</item>
+        <item>United States of America</item>
+        <item>United Kingdom</item>
+        <item>United Arab Emirates</item>
+        <item>Argentian</item>
+    </array>
+</resources>
