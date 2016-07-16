@@ -1,0 +1,568 @@
+07-16 17:42:23.007    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ http://api.smartprix.com/simple/v1?type=search&key=NVgien7bb7P5Gsc8DWqc&category=Mobiles&q=3g&start=0&indent=1
+07-16 17:42:23.437    4552-4864/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ HTTP request status is OK
+07-16 17:42:23.447    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ Inside fillProductsList and size of list = 10
+07-16 17:42:23.477    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 2, firstVisibleItemPosition = 0, totalItemCount = 10
+07-16 17:42:25.977    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 0, totalItemCount = 10
+07-16 17:42:26.797    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 1, totalItemCount = 10
+07-16 17:42:26.817    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 1, totalItemCount = 10
+07-16 17:42:26.827    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 2, totalItemCount = 10
+07-16 17:42:26.827    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 2, totalItemCount = 10
+07-16 17:42:26.847    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 2, totalItemCount = 10
+07-16 17:42:26.857    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 3, totalItemCount = 10
+07-16 17:42:26.877    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 4, totalItemCount = 10
+07-16 17:42:26.877    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ inside loadMoreItems with currentPage = 1
+07-16 17:42:26.877    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ The url to get Response : http://api.smartprix.com/simple/v1?type=search&key=NVgien7bb7P5Gsc8DWqc&category=Mobiles&q=3g&start=10&indent=1
+07-16 17:42:26.877    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ Inside fillProductsList and size of list = 10
+07-16 17:42:26.887    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 5, totalItemCount = 10
+07-16 17:42:26.887    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ inside loadMoreItems with currentPage = 1
+07-16 17:42:26.887    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ The url to get Response : http://api.smartprix.com/simple/v1?type=search&key=NVgien7bb7P5Gsc8DWqc&category=Mobiles&q=3g&start=10&indent=1
+07-16 17:42:26.887    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ Inside fillProductsList and size of list = 10
+07-16 17:42:27.417    4552-4626/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ HTTP request status is OK
+07-16 17:42:27.427    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ Inside fillProductsList and size of list = 20
+07-16 17:42:27.877    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 5, totalItemCount = 20
+07-16 17:42:27.887    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 5, totalItemCount = 20
+07-16 17:42:27.907    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 6, totalItemCount = 20
+07-16 17:42:27.927    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 6, totalItemCount = 20
+07-16 17:42:27.947    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 6, totalItemCount = 20
+07-16 17:42:27.957    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 6, totalItemCount = 20
+07-16 17:42:27.977    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 7, totalItemCount = 20
+07-16 17:42:27.987    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 7, totalItemCount = 20
+07-16 17:42:28.007    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 7, totalItemCount = 20
+07-16 17:42:28.027    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 8, totalItemCount = 20
+07-16 17:42:28.037    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 8, totalItemCount = 20
+07-16 17:42:28.057    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 8, totalItemCount = 20
+07-16 17:42:28.077    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 9, totalItemCount = 20
+07-16 17:42:28.087    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 9, totalItemCount = 20
+07-16 17:42:28.107    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 10, totalItemCount = 20
+07-16 17:42:28.127    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 10, totalItemCount = 20
+07-16 17:42:28.137    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 10, totalItemCount = 20
+07-16 17:42:28.157    4552-4873/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ HTTP request status is OK
+07-16 17:42:28.157    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ Inside fillProductsList and size of list = 30
+07-16 17:42:28.167    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 11, totalItemCount = 30
+07-16 17:42:28.177    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 11, totalItemCount = 30
+07-16 17:42:28.197    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 11, totalItemCount = 30
+07-16 17:42:28.207    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 12, totalItemCount = 30
+07-16 17:42:28.227    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 12, totalItemCount = 30
+07-16 17:42:28.237    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 12, totalItemCount = 30
+07-16 17:42:28.257    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 12, totalItemCount = 30
+07-16 17:42:28.277    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 13, totalItemCount = 30
+07-16 17:42:28.287    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 13, totalItemCount = 30
+07-16 17:42:28.307    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 13, totalItemCount = 30
+07-16 17:42:28.327    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 13, totalItemCount = 30
+07-16 17:42:28.337    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 13, totalItemCount = 30
+07-16 17:42:28.357    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 14, totalItemCount = 30
+07-16 17:42:28.377    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 14, totalItemCount = 30
+07-16 17:42:28.387    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 14, totalItemCount = 30
+07-16 17:42:28.407    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 14, totalItemCount = 30
+07-16 17:42:28.427    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 14, totalItemCount = 30
+07-16 17:42:28.447    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 14, totalItemCount = 30
+07-16 17:42:28.457    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 15, totalItemCount = 30
+07-16 17:42:28.477    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 15, totalItemCount = 30
+07-16 17:42:28.487    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 15, totalItemCount = 30
+07-16 17:42:28.507    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 15, totalItemCount = 30
+07-16 17:42:28.527    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 15, totalItemCount = 30
+07-16 17:42:28.537    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 15, totalItemCount = 30
+07-16 17:42:28.557    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 15, totalItemCount = 30
+07-16 17:42:28.577    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 15, totalItemCount = 30
+07-16 17:42:28.587    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 15, totalItemCount = 30
+07-16 17:42:28.607    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 15, totalItemCount = 30
+07-16 17:42:28.627    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 16, totalItemCount = 30
+07-16 17:42:28.637    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 16, totalItemCount = 30
+07-16 17:42:28.657    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 16, totalItemCount = 30
+07-16 17:42:28.677    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 16, totalItemCount = 30
+07-16 17:42:28.687    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 16, totalItemCount = 30
+07-16 17:42:28.707    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 16, totalItemCount = 30
+07-16 17:42:28.807    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 16, totalItemCount = 30
+07-16 17:42:28.827    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 16, totalItemCount = 30
+07-16 17:42:28.837    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 17, totalItemCount = 30
+07-16 17:42:28.857    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 18, totalItemCount = 30
+07-16 17:42:28.877    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 18, totalItemCount = 30
+07-16 17:42:28.887    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 18, totalItemCount = 30
+07-16 17:42:28.907    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 19, totalItemCount = 30
+07-16 17:42:28.907    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 19, totalItemCount = 30
+07-16 17:42:28.927    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 19, totalItemCount = 30
+07-16 17:42:28.937    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 20, totalItemCount = 30
+07-16 17:42:28.957    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 20, totalItemCount = 30
+07-16 17:42:28.977    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 21, totalItemCount = 30
+07-16 17:42:28.987    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 21, totalItemCount = 30
+07-16 17:42:29.007    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 22, totalItemCount = 30
+07-16 17:42:29.027    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 22, totalItemCount = 30
+07-16 17:42:29.037    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 22, totalItemCount = 30
+07-16 17:42:29.057    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 23, totalItemCount = 30
+07-16 17:42:29.077    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 23, totalItemCount = 30
+07-16 17:42:29.087    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 24, totalItemCount = 30
+07-16 17:42:29.107    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 24, totalItemCount = 30
+07-16 17:42:29.127    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 24, totalItemCount = 30
+07-16 17:42:29.127    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ inside loadMoreItems with currentPage = 3
+07-16 17:42:29.127    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ The url to get Response : http://api.smartprix.com/simple/v1?type=search&key=NVgien7bb7P5Gsc8DWqc&category=Mobiles&q=3g&start=30&indent=1
+07-16 17:42:29.127    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ Inside fillProductsList and size of list = 30
+07-16 17:42:29.137    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 25, totalItemCount = 30
+07-16 17:42:29.137    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ inside loadMoreItems with currentPage = 3
+07-16 17:42:29.137    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ The url to get Response : http://api.smartprix.com/simple/v1?type=search&key=NVgien7bb7P5Gsc8DWqc&category=Mobiles&q=3g&start=30&indent=1
+07-16 17:42:29.137    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ Inside fillProductsList and size of list = 30
+07-16 17:42:29.157    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 25, totalItemCount = 30
+07-16 17:42:29.157    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ inside loadMoreItems with currentPage = 3
+07-16 17:42:29.157    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ The url to get Response : http://api.smartprix.com/simple/v1?type=search&key=NVgien7bb7P5Gsc8DWqc&category=Mobiles&q=3g&start=30&indent=1
+07-16 17:42:29.157    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ Inside fillProductsList and size of list = 30
+07-16 17:42:29.177    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 25, totalItemCount = 30
+07-16 17:42:29.177    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ inside loadMoreItems with currentPage = 3
+07-16 17:42:29.177    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ The url to get Response : http://api.smartprix.com/simple/v1?type=search&key=NVgien7bb7P5Gsc8DWqc&category=Mobiles&q=3g&start=30&indent=1
+07-16 17:42:29.177    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ Inside fillProductsList and size of list = 30
+07-16 17:42:30.427    4552-4873/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ HTTP request status is OK
+07-16 17:42:30.447    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ Inside fillProductsList and size of list = 40
+07-16 17:42:30.557    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 25, totalItemCount = 40
+07-16 17:42:30.577    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 26, totalItemCount = 40
+07-16 17:42:30.587    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 26, totalItemCount = 40
+07-16 17:42:30.607    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 26, totalItemCount = 40
+07-16 17:42:30.627    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 26, totalItemCount = 40
+07-16 17:42:30.637    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 26, totalItemCount = 40
+07-16 17:42:30.657    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 26, totalItemCount = 40
+07-16 17:42:30.677    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 26, totalItemCount = 40
+07-16 17:42:30.687    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 26, totalItemCount = 40
+07-16 17:42:30.707    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 26, totalItemCount = 40
+07-16 17:42:30.727    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 26, totalItemCount = 40
+07-16 17:42:30.737    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 27, totalItemCount = 40
+07-16 17:42:30.757    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 27, totalItemCount = 40
+07-16 17:42:30.777    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 27, totalItemCount = 40
+07-16 17:42:30.787    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 27, totalItemCount = 40
+07-16 17:42:30.807    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 27, totalItemCount = 40
+07-16 17:42:30.827    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 27, totalItemCount = 40
+07-16 17:42:30.837    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 27, totalItemCount = 40
+07-16 17:42:30.857    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 27, totalItemCount = 40
+07-16 17:42:30.877    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 27, totalItemCount = 40
+07-16 17:42:30.887    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 27, totalItemCount = 40
+07-16 17:42:30.917    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 27, totalItemCount = 40
+07-16 17:42:30.927    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 27, totalItemCount = 40
+07-16 17:42:30.937    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 27, totalItemCount = 40
+07-16 17:42:30.937    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 27, totalItemCount = 40
+07-16 17:42:30.957    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 28, totalItemCount = 40
+07-16 17:42:30.977    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 28, totalItemCount = 40
+07-16 17:42:30.997    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 28, totalItemCount = 40
+07-16 17:42:31.007    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 28, totalItemCount = 40
+07-16 17:42:31.027    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 29, totalItemCount = 40
+07-16 17:42:31.037    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 29, totalItemCount = 40
+07-16 17:42:31.057    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 29, totalItemCount = 40
+07-16 17:42:31.077    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 29, totalItemCount = 40
+07-16 17:42:31.087    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 29, totalItemCount = 40
+07-16 17:42:31.107    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 29, totalItemCount = 40
+07-16 17:42:31.117    4552-4873/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ HTTP request status is OK
+07-16 17:42:31.117    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ Inside fillProductsList and size of list = 50
+07-16 17:42:31.137    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 30, totalItemCount = 50
+07-16 17:42:31.137    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 30, totalItemCount = 50
+07-16 17:42:31.157    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 30, totalItemCount = 50
+07-16 17:42:31.177    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 30, totalItemCount = 50
+07-16 17:42:31.187    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 30, totalItemCount = 50
+07-16 17:42:31.207    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 30, totalItemCount = 50
+07-16 17:42:31.227    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 30, totalItemCount = 50
+07-16 17:42:31.237    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 30, totalItemCount = 50
+07-16 17:42:31.257    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 30, totalItemCount = 50
+07-16 17:42:31.277    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 30, totalItemCount = 50
+07-16 17:42:31.287    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 30, totalItemCount = 50
+07-16 17:42:31.307    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 30, totalItemCount = 50
+07-16 17:42:31.327    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 30, totalItemCount = 50
+07-16 17:42:31.337    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 30, totalItemCount = 50
+07-16 17:42:31.357    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 30, totalItemCount = 50
+07-16 17:42:31.377    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 30, totalItemCount = 50
+07-16 17:42:31.387    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 30, totalItemCount = 50
+07-16 17:42:31.407    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 31, totalItemCount = 50
+07-16 17:42:31.427    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 31, totalItemCount = 50
+07-16 17:42:31.437    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 31, totalItemCount = 50
+07-16 17:42:31.457    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 31, totalItemCount = 50
+07-16 17:42:31.477    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 31, totalItemCount = 50
+07-16 17:42:31.487    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 31, totalItemCount = 50
+07-16 17:42:31.507    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 31, totalItemCount = 50
+07-16 17:42:31.527    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 31, totalItemCount = 50
+07-16 17:42:31.537    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 31, totalItemCount = 50
+07-16 17:42:31.637    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 31, totalItemCount = 50
+07-16 17:42:31.667    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 31, totalItemCount = 50
+07-16 17:42:31.677    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 31, totalItemCount = 50
+07-16 17:42:31.697    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 31, totalItemCount = 50
+07-16 17:42:31.707    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 31, totalItemCount = 50
+07-16 17:42:31.727    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 31, totalItemCount = 50
+07-16 17:42:31.737    4552-4873/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ HTTP request status is OK
+07-16 17:42:31.737    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ Inside fillProductsList and size of list = 60
+07-16 17:42:31.747    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 32, totalItemCount = 60
+07-16 17:42:31.757    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 32, totalItemCount = 60
+07-16 17:42:31.777    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 32, totalItemCount = 60
+07-16 17:42:31.787    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 32, totalItemCount = 60
+07-16 17:42:31.807    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 32, totalItemCount = 60
+07-16 17:42:31.827    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 32, totalItemCount = 60
+07-16 17:42:31.837    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 32, totalItemCount = 60
+07-16 17:42:31.857    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 32, totalItemCount = 60
+07-16 17:42:31.867    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 32, totalItemCount = 60
+07-16 17:42:32.347    4552-4873/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ HTTP request status is OK
+07-16 17:42:32.347    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ Inside fillProductsList and size of list = 70
+07-16 17:42:32.557    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 33, totalItemCount = 70
+07-16 17:42:32.577    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 33, totalItemCount = 70
+07-16 17:42:32.597    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 33, totalItemCount = 70
+07-16 17:42:32.607    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 33, totalItemCount = 70
+07-16 17:42:32.627    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 33, totalItemCount = 70
+07-16 17:42:32.637    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 34, totalItemCount = 70
+07-16 17:42:32.657    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 34, totalItemCount = 70
+07-16 17:42:32.677    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 34, totalItemCount = 70
+07-16 17:42:32.687    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 34, totalItemCount = 70
+07-16 17:42:32.707    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 34, totalItemCount = 70
+07-16 17:42:32.727    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 34, totalItemCount = 70
+07-16 17:42:32.737    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 34, totalItemCount = 70
+07-16 17:42:32.757    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 34, totalItemCount = 70
+07-16 17:42:32.777    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 34, totalItemCount = 70
+07-16 17:42:32.787    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 34, totalItemCount = 70
+07-16 17:42:32.807    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 34, totalItemCount = 70
+07-16 17:42:32.827    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 34, totalItemCount = 70
+07-16 17:42:32.837    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 34, totalItemCount = 70
+07-16 17:42:32.857    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 34, totalItemCount = 70
+07-16 17:42:32.877    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 34, totalItemCount = 70
+07-16 17:42:32.887    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 34, totalItemCount = 70
+07-16 17:42:32.907    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 34, totalItemCount = 70
+07-16 17:42:32.927    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 34, totalItemCount = 70
+07-16 17:42:32.937    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 35, totalItemCount = 70
+07-16 17:42:32.957    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 35, totalItemCount = 70
+07-16 17:42:32.977    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 35, totalItemCount = 70
+07-16 17:42:32.987    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 35, totalItemCount = 70
+07-16 17:42:33.007    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 35, totalItemCount = 70
+07-16 17:42:33.027    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 35, totalItemCount = 70
+07-16 17:42:33.037    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 35, totalItemCount = 70
+07-16 17:42:33.057    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 35, totalItemCount = 70
+07-16 17:42:33.077    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 35, totalItemCount = 70
+07-16 17:42:33.087    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 35, totalItemCount = 70
+07-16 17:42:33.107    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 35, totalItemCount = 70
+07-16 17:42:33.127    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 35, totalItemCount = 70
+07-16 17:42:33.137    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 35, totalItemCount = 70
+07-16 17:42:33.157    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 35, totalItemCount = 70
+07-16 17:42:33.177    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 35, totalItemCount = 70
+07-16 17:42:33.207    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 35, totalItemCount = 70
+07-16 17:42:33.487    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 35, totalItemCount = 70
+07-16 17:42:33.507    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 36, totalItemCount = 70
+07-16 17:42:33.527    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 36, totalItemCount = 70
+07-16 17:42:33.537    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 36, totalItemCount = 70
+07-16 17:42:33.557    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 37, totalItemCount = 70
+07-16 17:42:33.577    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 37, totalItemCount = 70
+07-16 17:42:33.587    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 37, totalItemCount = 70
+07-16 17:42:33.587    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 37, totalItemCount = 70
+07-16 17:42:33.607    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 38, totalItemCount = 70
+07-16 17:42:33.627    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 38, totalItemCount = 70
+07-16 17:42:33.637    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 38, totalItemCount = 70
+07-16 17:42:33.657    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 39, totalItemCount = 70
+07-16 17:42:33.677    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 39, totalItemCount = 70
+07-16 17:42:33.687    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 39, totalItemCount = 70
+07-16 17:42:33.707    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 40, totalItemCount = 70
+07-16 17:42:33.727    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 40, totalItemCount = 70
+07-16 17:42:33.737    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 40, totalItemCount = 70
+07-16 17:42:33.757    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 40, totalItemCount = 70
+07-16 17:42:33.777    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 41, totalItemCount = 70
+07-16 17:42:33.787    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 41, totalItemCount = 70
+07-16 17:42:33.807    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 41, totalItemCount = 70
+07-16 17:42:33.847    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 41, totalItemCount = 70
+07-16 17:42:33.857    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 42, totalItemCount = 70
+07-16 17:42:33.877    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 42, totalItemCount = 70
+07-16 17:42:33.887    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 42, totalItemCount = 70
+07-16 17:42:33.907    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 42, totalItemCount = 70
+07-16 17:42:33.927    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 42, totalItemCount = 70
+07-16 17:42:33.937    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 42, totalItemCount = 70
+07-16 17:42:33.957    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 42, totalItemCount = 70
+07-16 17:42:33.977    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 43, totalItemCount = 70
+07-16 17:42:33.987    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 43, totalItemCount = 70
+07-16 17:42:34.007    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 43, totalItemCount = 70
+07-16 17:42:34.027    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 43, totalItemCount = 70
+07-16 17:42:34.037    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 43, totalItemCount = 70
+07-16 17:42:34.057    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 43, totalItemCount = 70
+07-16 17:42:34.077    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 43, totalItemCount = 70
+07-16 17:42:34.087    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 43, totalItemCount = 70
+07-16 17:42:34.107    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 43, totalItemCount = 70
+07-16 17:42:34.127    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 43, totalItemCount = 70
+07-16 17:42:34.137    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 43, totalItemCount = 70
+07-16 17:42:34.157    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 43, totalItemCount = 70
+07-16 17:42:34.177    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 43, totalItemCount = 70
+07-16 17:42:34.187    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 43, totalItemCount = 70
+07-16 17:42:34.207    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 44, totalItemCount = 70
+07-16 17:42:34.227    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 44, totalItemCount = 70
+07-16 17:42:34.237    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 44, totalItemCount = 70
+07-16 17:42:34.257    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 44, totalItemCount = 70
+07-16 17:42:34.277    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 44, totalItemCount = 70
+07-16 17:42:34.357    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 44, totalItemCount = 70
+07-16 17:42:34.377    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 44, totalItemCount = 70
+07-16 17:42:34.387    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 44, totalItemCount = 70
+07-16 17:42:34.407    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 45, totalItemCount = 70
+07-16 17:42:34.427    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 46, totalItemCount = 70
+07-16 17:42:34.437    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 46, totalItemCount = 70
+07-16 17:42:34.457    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 46, totalItemCount = 70
+07-16 17:42:34.467    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 47, totalItemCount = 70
+07-16 17:42:34.477    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 47, totalItemCount = 70
+07-16 17:42:34.487    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 47, totalItemCount = 70
+07-16 17:42:34.507    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 48, totalItemCount = 70
+07-16 17:42:34.527    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 49, totalItemCount = 70
+07-16 17:42:34.537    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 49, totalItemCount = 70
+07-16 17:42:34.557    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 50, totalItemCount = 70
+07-16 17:42:34.577    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 50, totalItemCount = 70
+07-16 17:42:34.587    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 51, totalItemCount = 70
+07-16 17:42:34.607    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 51, totalItemCount = 70
+07-16 17:42:34.627    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 52, totalItemCount = 70
+07-16 17:42:34.637    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 52, totalItemCount = 70
+07-16 17:42:34.657    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 53, totalItemCount = 70
+07-16 17:42:34.677    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 53, totalItemCount = 70
+07-16 17:42:34.687    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 54, totalItemCount = 70
+07-16 17:42:34.707    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 54, totalItemCount = 70
+07-16 17:42:34.727    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 54, totalItemCount = 70
+07-16 17:42:34.737    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 55, totalItemCount = 70
+07-16 17:42:34.757    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 55, totalItemCount = 70
+07-16 17:42:34.777    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 56, totalItemCount = 70
+07-16 17:42:34.787    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 56, totalItemCount = 70
+07-16 17:42:34.807    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 56, totalItemCount = 70
+07-16 17:42:34.827    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 57, totalItemCount = 70
+07-16 17:42:34.837    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 57, totalItemCount = 70
+07-16 17:42:34.857    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 57, totalItemCount = 70
+07-16 17:42:34.877    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 58, totalItemCount = 70
+07-16 17:42:34.887    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 58, totalItemCount = 70
+07-16 17:42:34.907    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 58, totalItemCount = 70
+07-16 17:42:34.927    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 58, totalItemCount = 70
+07-16 17:42:34.937    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 59, totalItemCount = 70
+07-16 17:42:34.957    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 59, totalItemCount = 70
+07-16 17:42:34.977    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 59, totalItemCount = 70
+07-16 17:42:34.987    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 59, totalItemCount = 70
+07-16 17:42:35.007    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 59, totalItemCount = 70
+07-16 17:42:35.027    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 60, totalItemCount = 70
+07-16 17:42:35.037    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 60, totalItemCount = 70
+07-16 17:42:35.057    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 60, totalItemCount = 70
+07-16 17:42:35.077    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 60, totalItemCount = 70
+07-16 17:42:35.087    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 60, totalItemCount = 70
+07-16 17:42:35.107    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 61, totalItemCount = 70
+07-16 17:42:35.127    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 61, totalItemCount = 70
+07-16 17:42:35.137    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 61, totalItemCount = 70
+07-16 17:42:35.157    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 61, totalItemCount = 70
+07-16 17:42:35.237    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 61, totalItemCount = 70
+07-16 17:42:35.257    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 62, totalItemCount = 70
+07-16 17:42:35.277    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 62, totalItemCount = 70
+07-16 17:42:35.287    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 63, totalItemCount = 70
+07-16 17:42:35.327    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 63, totalItemCount = 70
+07-16 17:42:35.327    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 64, totalItemCount = 70
+07-16 17:42:35.337    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 64, totalItemCount = 70
+07-16 17:42:35.337    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ inside loadMoreItems with currentPage = 7
+07-16 17:42:35.337    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ The url to get Response : http://api.smartprix.com/simple/v1?type=search&key=NVgien7bb7P5Gsc8DWqc&category=Mobiles&q=3g&start=70&indent=1
+07-16 17:42:35.337    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ Inside fillProductsList and size of list = 70
+07-16 17:42:35.347    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 65, totalItemCount = 70
+07-16 17:42:35.347    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ inside loadMoreItems with currentPage = 7
+07-16 17:42:35.347    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ The url to get Response : http://api.smartprix.com/simple/v1?type=search&key=NVgien7bb7P5Gsc8DWqc&category=Mobiles&q=3g&start=70&indent=1
+07-16 17:42:35.347    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ Inside fillProductsList and size of list = 70
+07-16 17:42:35.357    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 65, totalItemCount = 70
+07-16 17:42:35.357    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ inside loadMoreItems with currentPage = 7
+07-16 17:42:35.357    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ The url to get Response : http://api.smartprix.com/simple/v1?type=search&key=NVgien7bb7P5Gsc8DWqc&category=Mobiles&q=3g&start=70&indent=1
+07-16 17:42:35.357    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ Inside fillProductsList and size of list = 70
+07-16 17:42:36.637    4552-4625/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ HTTP request status is OK
+07-16 17:42:36.637    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ Inside fillProductsList and size of list = 80
+07-16 17:42:36.997    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 65, totalItemCount = 80
+07-16 17:42:37.007    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 65, totalItemCount = 80
+07-16 17:42:37.027    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 66, totalItemCount = 80
+07-16 17:42:37.037    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 66, totalItemCount = 80
+07-16 17:42:37.057    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 66, totalItemCount = 80
+07-16 17:42:37.077    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 66, totalItemCount = 80
+07-16 17:42:37.097    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 66, totalItemCount = 80
+07-16 17:42:37.107    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 66, totalItemCount = 80
+07-16 17:42:37.127    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 67, totalItemCount = 80
+07-16 17:42:37.137    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 67, totalItemCount = 80
+07-16 17:42:37.157    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 67, totalItemCount = 80
+07-16 17:42:37.177    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 67, totalItemCount = 80
+07-16 17:42:37.187    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 68, totalItemCount = 80
+07-16 17:42:37.207    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 68, totalItemCount = 80
+07-16 17:42:37.227    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 68, totalItemCount = 80
+07-16 17:42:37.237    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 68, totalItemCount = 80
+07-16 17:42:37.257    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 69, totalItemCount = 80
+07-16 17:42:37.277    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 69, totalItemCount = 80
+07-16 17:42:37.297    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 69, totalItemCount = 80
+07-16 17:42:37.307    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 69, totalItemCount = 80
+07-16 17:42:37.317    4552-4626/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ HTTP request status is OK
+07-16 17:42:37.317    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ Inside fillProductsList and size of list = 90
+07-16 17:42:37.337    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 70, totalItemCount = 90
+07-16 17:42:37.337    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 70, totalItemCount = 90
+07-16 17:42:37.357    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 70, totalItemCount = 90
+07-16 17:42:37.377    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 70, totalItemCount = 90
+07-16 17:42:37.397    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 70, totalItemCount = 90
+07-16 17:42:37.407    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 70, totalItemCount = 90
+07-16 17:42:37.427    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 70, totalItemCount = 90
+07-16 17:42:37.437    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 71, totalItemCount = 90
+07-16 17:42:37.457    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 71, totalItemCount = 90
+07-16 17:42:37.477    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 71, totalItemCount = 90
+07-16 17:42:37.487    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 71, totalItemCount = 90
+07-16 17:42:37.507    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 71, totalItemCount = 90
+07-16 17:42:37.527    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 71, totalItemCount = 90
+07-16 17:42:37.557    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 71, totalItemCount = 90
+07-16 17:42:37.567    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 71, totalItemCount = 90
+07-16 17:42:37.577    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 71, totalItemCount = 90
+07-16 17:42:37.587    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 71, totalItemCount = 90
+07-16 17:42:37.607    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 71, totalItemCount = 90
+07-16 17:42:37.627    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 71, totalItemCount = 90
+07-16 17:42:37.637    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 72, totalItemCount = 90
+07-16 17:42:37.657    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 72, totalItemCount = 90
+07-16 17:42:37.677    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 72, totalItemCount = 90
+07-16 17:42:37.687    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 72, totalItemCount = 90
+07-16 17:42:37.707    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 72, totalItemCount = 90
+07-16 17:42:37.727    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 72, totalItemCount = 90
+07-16 17:42:37.737    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 72, totalItemCount = 90
+07-16 17:42:37.757    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 72, totalItemCount = 90
+07-16 17:42:37.777    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 72, totalItemCount = 90
+07-16 17:42:37.787    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 72, totalItemCount = 90
+07-16 17:42:37.807    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 72, totalItemCount = 90
+07-16 17:42:37.827    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 72, totalItemCount = 90
+07-16 17:42:37.837    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 72, totalItemCount = 90
+07-16 17:42:37.857    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 72, totalItemCount = 90
+07-16 17:42:37.877    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 72, totalItemCount = 90
+07-16 17:42:37.977    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 72, totalItemCount = 90
+07-16 17:42:37.987    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 72, totalItemCount = 90
+07-16 17:42:37.997    4552-4579/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ HTTP request status is OK
+07-16 17:42:37.997    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ Inside fillProductsList and size of list = 100
+07-16 17:42:38.017    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 73, totalItemCount = 100
+07-16 17:42:38.027    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 73, totalItemCount = 100
+07-16 17:42:38.047    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 73, totalItemCount = 100
+07-16 17:42:38.057    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 74, totalItemCount = 100
+07-16 17:42:38.077    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 74, totalItemCount = 100
+07-16 17:42:38.097    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 74, totalItemCount = 100
+07-16 17:42:38.107    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 75, totalItemCount = 100
+07-16 17:42:38.127    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 75, totalItemCount = 100
+07-16 17:42:38.137    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 76, totalItemCount = 100
+07-16 17:42:38.157    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 76, totalItemCount = 100
+07-16 17:42:38.177    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 76, totalItemCount = 100
+07-16 17:42:38.187    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 77, totalItemCount = 100
+07-16 17:42:38.207    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 77, totalItemCount = 100
+07-16 17:42:38.227    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 77, totalItemCount = 100
+07-16 17:42:38.237    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 78, totalItemCount = 100
+07-16 17:42:38.257    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 78, totalItemCount = 100
+07-16 17:42:38.277    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 78, totalItemCount = 100
+07-16 17:42:38.287    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 78, totalItemCount = 100
+07-16 17:42:38.307    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 79, totalItemCount = 100
+07-16 17:42:38.327    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 79, totalItemCount = 100
+07-16 17:42:38.337    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 79, totalItemCount = 100
+07-16 17:42:38.357    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 79, totalItemCount = 100
+07-16 17:42:38.377    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 79, totalItemCount = 100
+07-16 17:42:38.387    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 80, totalItemCount = 100
+07-16 17:42:38.407    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 80, totalItemCount = 100
+07-16 17:42:38.427    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 80, totalItemCount = 100
+07-16 17:42:38.437    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 80, totalItemCount = 100
+07-16 17:42:38.457    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 80, totalItemCount = 100
+07-16 17:42:38.477    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 80, totalItemCount = 100
+07-16 17:42:38.487    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 81, totalItemCount = 100
+07-16 17:42:38.507    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 81, totalItemCount = 100
+07-16 17:42:38.527    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 81, totalItemCount = 100
+07-16 17:42:38.537    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 81, totalItemCount = 100
+07-16 17:42:38.557    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 81, totalItemCount = 100
+07-16 17:42:38.577    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 81, totalItemCount = 100
+07-16 17:42:38.587    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 81, totalItemCount = 100
+07-16 17:42:38.607    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 81, totalItemCount = 100
+07-16 17:42:38.627    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 81, totalItemCount = 100
+07-16 17:42:38.637    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 82, totalItemCount = 100
+07-16 17:42:38.657    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 82, totalItemCount = 100
+07-16 17:42:38.677    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 82, totalItemCount = 100
+07-16 17:42:38.687    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 82, totalItemCount = 100
+07-16 17:42:38.707    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 82, totalItemCount = 100
+07-16 17:42:38.727    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 82, totalItemCount = 100
+07-16 17:42:38.737    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 82, totalItemCount = 100
+07-16 17:42:38.757    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 82, totalItemCount = 100
+07-16 17:42:38.777    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 82, totalItemCount = 100
+07-16 17:42:38.787    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 82, totalItemCount = 100
+07-16 17:42:38.807    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 82, totalItemCount = 100
+07-16 17:42:38.827    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 82, totalItemCount = 100
+07-16 17:42:38.837    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 82, totalItemCount = 100
+07-16 17:42:38.857    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 82, totalItemCount = 100
+07-16 17:42:38.877    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 82, totalItemCount = 100
+07-16 17:42:38.887    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 82, totalItemCount = 100
+07-16 17:42:38.907    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 82, totalItemCount = 100
+07-16 17:42:38.927    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 82, totalItemCount = 100
+07-16 17:42:38.937    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 82, totalItemCount = 100
+07-16 17:42:38.957    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 82, totalItemCount = 100
+07-16 17:42:38.977    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 82, totalItemCount = 100
+07-16 17:42:38.987    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 82, totalItemCount = 100
+07-16 17:42:39.007    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 82, totalItemCount = 100
+07-16 17:42:39.027    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 82, totalItemCount = 100
+07-16 17:42:39.037    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 82, totalItemCount = 100
+07-16 17:42:39.057    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 82, totalItemCount = 100
+07-16 17:42:39.077    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 82, totalItemCount = 100
+07-16 17:42:39.657    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 83, totalItemCount = 100
+07-16 17:42:39.677    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 83, totalItemCount = 100
+07-16 17:42:39.687    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 84, totalItemCount = 100
+07-16 17:42:39.707    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 84, totalItemCount = 100
+07-16 17:42:39.727    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 85, totalItemCount = 100
+07-16 17:42:39.747    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 85, totalItemCount = 100
+07-16 17:42:39.747    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 85, totalItemCount = 100
+07-16 17:42:39.757    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 85, totalItemCount = 100
+07-16 17:42:39.777    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 86, totalItemCount = 100
+07-16 17:42:39.787    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 86, totalItemCount = 100
+07-16 17:42:39.807    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 87, totalItemCount = 100
+07-16 17:42:39.827    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 87, totalItemCount = 100
+07-16 17:42:39.837    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 87, totalItemCount = 100
+07-16 17:42:39.857    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 88, totalItemCount = 100
+07-16 17:42:39.877    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 88, totalItemCount = 100
+07-16 17:42:39.887    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 89, totalItemCount = 100
+07-16 17:42:39.907    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 89, totalItemCount = 100
+07-16 17:42:39.927    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 89, totalItemCount = 100
+07-16 17:42:39.937    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 89, totalItemCount = 100
+07-16 17:42:39.957    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 90, totalItemCount = 100
+07-16 17:42:39.977    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 90, totalItemCount = 100
+07-16 17:42:39.987    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 90, totalItemCount = 100
+07-16 17:42:40.007    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 90, totalItemCount = 100
+07-16 17:42:40.027    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 91, totalItemCount = 100
+07-16 17:42:40.037    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 91, totalItemCount = 100
+07-16 17:42:40.057    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 91, totalItemCount = 100
+07-16 17:42:40.077    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 91, totalItemCount = 100
+07-16 17:42:40.087    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 92, totalItemCount = 100
+07-16 17:42:40.107    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 92, totalItemCount = 100
+07-16 17:42:40.127    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 92, totalItemCount = 100
+07-16 17:42:40.137    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 92, totalItemCount = 100
+07-16 17:42:40.157    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 92, totalItemCount = 100
+07-16 17:42:40.177    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 92, totalItemCount = 100
+07-16 17:42:40.187    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 92, totalItemCount = 100
+07-16 17:42:40.207    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 93, totalItemCount = 100
+07-16 17:42:40.227    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 93, totalItemCount = 100
+07-16 17:42:40.237    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 93, totalItemCount = 100
+07-16 17:42:40.257    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 93, totalItemCount = 100
+07-16 17:42:40.277    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 93, totalItemCount = 100
+07-16 17:42:40.287    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 93, totalItemCount = 100
+07-16 17:42:40.307    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 93, totalItemCount = 100
+07-16 17:42:40.327    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 93, totalItemCount = 100
+07-16 17:42:40.337    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 93, totalItemCount = 100
+07-16 17:42:40.357    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 93, totalItemCount = 100
+07-16 17:42:40.377    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 93, totalItemCount = 100
+07-16 17:42:40.387    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 94, totalItemCount = 100
+07-16 17:42:40.407    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 94, totalItemCount = 100
+07-16 17:42:40.427    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 94, totalItemCount = 100
+07-16 17:42:40.437    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 94, totalItemCount = 100
+07-16 17:42:40.537    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 94, totalItemCount = 100
+07-16 17:42:40.537    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ inside loadMoreItems with currentPage = 10
+07-16 17:42:40.537    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ The url to get Response : http://api.smartprix.com/simple/v1?type=search&key=NVgien7bb7P5Gsc8DWqc&category=Mobiles&q=3g&start=100&indent=1
+07-16 17:42:40.537    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ Inside fillProductsList and size of list = 100
+07-16 17:42:40.557    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 95, totalItemCount = 100
+07-16 17:42:40.557    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ inside loadMoreItems with currentPage = 10
+07-16 17:42:40.557    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ The url to get Response : http://api.smartprix.com/simple/v1?type=search&key=NVgien7bb7P5Gsc8DWqc&category=Mobiles&q=3g&start=100&indent=1
+07-16 17:42:40.557    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ Inside fillProductsList and size of list = 100
+07-16 17:42:40.577    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 95, totalItemCount = 100
+07-16 17:42:40.577    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ inside loadMoreItems with currentPage = 10
+07-16 17:42:40.577    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ The url to get Response : http://api.smartprix.com/simple/v1?type=search&key=NVgien7bb7P5Gsc8DWqc&category=Mobiles&q=3g&start=100&indent=1
+07-16 17:42:40.577    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ Inside fillProductsList and size of list = 100
+07-16 17:42:41.347    4552-4626/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ HTTP request status is OK
+07-16 17:42:41.347    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ Inside fillProductsList and size of list = 110
+07-16 17:42:42.047    4552-4625/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ HTTP request status is OK
+07-16 17:42:42.047    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ Inside fillProductsList and size of list = 120
+07-16 17:42:42.357    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 95, totalItemCount = 120
+07-16 17:42:42.377    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 95, totalItemCount = 120
+07-16 17:42:42.387    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 96, totalItemCount = 120
+07-16 17:42:42.407    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 96, totalItemCount = 120
+07-16 17:42:42.427    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 96, totalItemCount = 120
+07-16 17:42:42.437    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 96, totalItemCount = 120
+07-16 17:42:42.457    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 96, totalItemCount = 120
+07-16 17:42:42.477    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 96, totalItemCount = 120
+07-16 17:42:42.487    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 96, totalItemCount = 120
+07-16 17:42:42.507    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 6, firstVisibleItemPosition = 96, totalItemCount = 120
+07-16 17:42:42.527    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 97, totalItemCount = 120
+07-16 17:42:42.537    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 97, totalItemCount = 120
+07-16 17:42:42.557    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 97, totalItemCount = 120
+07-16 17:42:42.577    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 97, totalItemCount = 120
+07-16 17:42:42.587    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 97, totalItemCount = 120
+07-16 17:42:42.607    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 97, totalItemCount = 120
+07-16 17:42:42.627    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 97, totalItemCount = 120
+07-16 17:42:42.637    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 97, totalItemCount = 120
+07-16 17:42:42.657    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 97, totalItemCount = 120
+07-16 17:42:42.677    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 97, totalItemCount = 120
+07-16 17:42:42.687    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 97, totalItemCount = 120
+07-16 17:42:42.707    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 97, totalItemCount = 120
+07-16 17:42:42.727    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 97, totalItemCount = 120
+07-16 17:42:42.737    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 97, totalItemCount = 120
+07-16 17:42:42.747    4552-4864/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ HTTP request status is OK
+07-16 17:42:42.747    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ Inside fillProductsList and size of list = 130
+07-16 17:42:42.757    4552-4552/com.example.rohitsingla.mysmartprix D/com.example.rohitsingla.mysmartprix.ProductList﹕ visibleItemCount = 5, firstVisibleItemPosition = 97, totalItemCount = 130
