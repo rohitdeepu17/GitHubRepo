@@ -39,7 +39,7 @@ public class ProductList extends Activity {
     private LinearLayoutManager mLayoutManager;
     public ArrayList<ProductDataForList> products;
     TextView tvCategoryName;
-    private String categoryName;
+    private String categoryName,queryName;
     private boolean firstLoad = true;
     private boolean mIsLoading = false;
     private int currentPage = 0;
@@ -73,12 +73,25 @@ public class ProductList extends Activity {
         //Log.d(TAG,"The category selected is "+bundle.getString("categoryName"));
         tvCategoryName.setText(bundle.getString("categoryName").replace("%20"," "));
         categoryName = bundle.getString("categoryName");
+        queryName = bundle.getString("query");
+        if(categoryName==null || categoryName.isEmpty()){
+            tvCategoryName.setText(queryName);
+        }
 
-        String url = "http://api.smartprix.com/simple/v1?type=search&key="
+        /*String url = "http://api.smartprix.com/simple/v1?type=search&key="
                     +API_KEY
                     +"&category="
                     +categoryName
-                    +"&q=3g&start=0&indent=1";
+                    +"&q=3g&start=0&indent=1";*/
+
+        String url = "http://api.smartprix.com/simple/v1?type=search&key="
+                +API_KEY
+                +"&category="
+                +categoryName
+                +"&q="
+                +queryName
+                +"&start=0&indent=1";
+
         Log.d(TAG, url);
         new FetchProductsTask()
                 .execute(url);
@@ -86,7 +99,16 @@ public class ProductList extends Activity {
         bGo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(ProductList.this, "Sorry, This functionality is not yet supported", Toast.LENGTH_SHORT).show();
+                String query = searchBox.getText().toString();
+                if(query!=null && !query.isEmpty()){
+                    Intent intent;
+                    intent = new Intent(ProductList.this, ProductList.class);
+                    intent.putExtra("categoryName", "");
+                    intent.putExtra("query",query);          //default
+                    startActivity(intent);
+                }else{
+                    Toast.makeText(ProductList.this,"Please enter some query",Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }
@@ -209,6 +231,22 @@ public class ProductList extends Activity {
                 Log.d("Test", "Couldn't successfully parse the JSON response!");
             }
         }
+    }
+
+    //For Single Top
+    @Override
+    protected void onNewIntent(Intent intent){
+        super.onNewIntent(intent);
+        /*String query = searchBox.getText().toString();
+        if(query!=null && !query.isEmpty()){
+            intent = new Intent(ProductList.this, ProductList.class);
+            intent.putExtra("categoryName", "");
+            intent.putExtra("query",query);          //default
+            startActivity(intent);
+        }else{
+            Toast.makeText(ProductList.this,"Please enter some query",Toast.LENGTH_SHORT).show();
+        }
+        InitializeVariables();*/
     }
 
     @Override

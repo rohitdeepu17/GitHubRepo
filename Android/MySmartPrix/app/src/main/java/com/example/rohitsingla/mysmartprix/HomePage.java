@@ -67,7 +67,16 @@ public class HomePage extends Activity {
         bGo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(HomePage.this,"Sorry, This functionality is not yet supported",Toast.LENGTH_SHORT).show();
+                String query = searchBox.getText().toString();
+                if(query!=null && !query.isEmpty()){
+                    Intent intent;
+                    intent = new Intent(HomePage.this, ProductList.class);
+                    intent.putExtra("categoryName", "");
+                    intent.putExtra("query",query);          //default
+                    startActivity(intent);
+                }else{
+                    Toast.makeText(HomePage.this,"Please enter some query",Toast.LENGTH_SHORT).show();
+                }
             }
         });
         categoriesList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -78,6 +87,7 @@ public class HomePage extends Activity {
                 String newCategoryString = categories.get(position);
                 newCategoryString = newCategoryString.replace(" ","%20");
                 intent.putExtra("categoryName", newCategoryString);
+                intent.putExtra("query","");          //default
                 startActivity(intent);
             }
         });

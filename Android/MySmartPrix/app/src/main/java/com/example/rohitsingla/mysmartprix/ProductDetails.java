@@ -84,7 +84,16 @@ public class ProductDetails extends Activity {
         bGo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(ProductDetails.this, "Sorry, This functionality is not yet supported", Toast.LENGTH_SHORT).show();
+                String query = searchBox.getText().toString();
+                if(query!=null && !query.isEmpty()){
+                    Intent intent;
+                    intent = new Intent(ProductDetails.this, ProductList.class);
+                    intent.putExtra("categoryName", "");
+                    intent.putExtra("query",query);          //default
+                    startActivity(intent);
+                }else{
+                    Toast.makeText(ProductDetails.this,"Please enter some query",Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }
