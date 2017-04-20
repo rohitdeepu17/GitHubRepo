@@ -37,8 +37,12 @@ public class MyActivity extends Activity {
             public void onClick(View view) {
 
                 getCel = celcius.getText().toString();
-                AsyncCallWS task = new AsyncCallWS();
-                task.execute();
+                if(getCel == null || getCel.trim().equalsIgnoreCase("")){
+                    celcius.setError("Please enter some value");
+                }else{
+                    AsyncCallWS task = new AsyncCallWS();
+                    task.execute();
+                }
             }
         });
     }

@@ -1,0 +1,50 @@
+
+public class WaitVsSleepExample {
+	boolean isFileProcessed = true;
+	public class SleepExampleThread1 extends Thread{
+		@Override
+		public void run() {
+			// TODO Auto-generated method stub
+			super.run();
+			while(!isFileProcessed){
+				try {
+					Thread.sleep(5000);
+				} catch (InterruptedException e) {
+					// TODO: handle exception
+					e.printStackTrace();
+				}
+			}
+			System.out.println("File processed. Go for next step");
+		}
+		
+	}
+	
+	public class SleepExampleThread2 extends Thread{
+		@Override
+		public void run() {
+			// TODO Auto-generated method stub
+			super.run();
+			System.out.println("Started processing file");
+			//do processing here
+			isFileProcessed = true;
+		}
+	}
+	
+	void testFunction(){
+		SleepExampleThread1 st1 = new SleepExampleThread1();
+		SleepExampleThread2 st2 = new SleepExampleThread2();
+		st1.start();
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		st2.start();
+	}
+	
+	public static void main(String[] args){
+		WaitVsSleepExample mWaitVsSleepExample = new WaitVsSleepExample();
+		mWaitVsSleepExample.testFunction();
+	}
+}
